@@ -1,0 +1,319 @@
+<svg width="780" height="730" viewBox="0 0 780 730" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+    <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#b0aaa0" stroke-width="0.3" opacity="0.3"/>
+  </pattern>
+</defs>
+
+<!-- Grid -->
+<rect x="28" y="28" width="515" height="535" fill="url(#grid)"/>
+
+<!-- Floor plate -->
+<path d="M28 28 L512 28 Q570 28 570 90 Q564 222 512 348 Q480 432 440 505 L28 505 Z"
+  fill="#edeae4" stroke="#2a2a2a" stroke-width="2.5"/>
+
+<!-- GROCERY -->
+<path d="M172 28 L512 28 Q560 28 560 82 Q552 176 480 212 Q395 238 228 236 L172 232 Z"
+  fill="#b2dfdb" stroke="#2a2a2a" stroke-width="1.8"/>
+<text font-family="Sora, sans-serif" font-size="14" font-weight="500" text-anchor="middle" fill="#004d40" x="368" y="105">GROCERY</text>
+<text font-family="Sora, sans-serif" font-size="8" text-anchor="middle" fill="#00695c" x="368" y="121">prime curved facade · clear-span verified</text>
+
+<!-- KIOSKS — attached to grocery bottom edge -->
+<rect x="192" y="218" width="56" height="22" rx="4" fill="#ef6c00" stroke="#bf360c" stroke-width="1.5"/>
+<text font-family="Sora, sans-serif" font-size="7" font-weight="500" text-anchor="middle" fill="#fff" x="220" y="233">COFFEE</text>
+
+<rect x="256" y="220" width="60" height="22" rx="4" fill="#ef6c00" stroke="#bf360c" stroke-width="1.5"/>
+<text font-family="Sora, sans-serif" font-size="7" font-weight="500" text-anchor="middle" fill="#fff" x="286" y="235">JUICE BAR</text>
+
+<rect x="324" y="222" width="56" height="22" rx="4" fill="#ef6c00" stroke="#bf360c" stroke-width="1.5"/>
+<text font-family="Sora, sans-serif" font-size="7" font-weight="500" text-anchor="middle" fill="#fff" x="352" y="237">BAKERY</text>
+
+<rect x="388" y="222" width="68" height="22" rx="4" fill="#ef6c00" stroke="#bf360c" stroke-width="1.5"/>
+<text font-family="Sora, sans-serif" font-size="7" font-weight="500" text-anchor="middle" fill="#fff" x="422" y="237">GRAB &amp; GO</text>
+
+<text font-family="Sora, sans-serif" font-size="6.5" fill="#bf360c" x="192" y="214">inline kiosks (separate leases)</text>
+
+<!-- PUBLIC CONCOURSE -->
+<path d="M28 200 Q120 200 172 206 Q320 220 440 224 Q520 218 555 192
+         L555 216 Q520 248 440 260 Q320 270 172 268 Q120 272 28 272 Z"
+  fill="#fafaf6" stroke="#999" stroke-width="1"/>
+
+<!-- CAFE — open on concourse -->
+<rect x="38" y="208" width="130" height="56" rx="6" fill="#e3f2fd" stroke="#1565c0" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.55"/>
+<text font-family="Sora, sans-serif" font-size="11" font-weight="500" fill="#0d47a1" x="58" y="234">CAFE</text>
+<text font-family="Sora, sans-serif" font-size="7" fill="#1565c0" x="58" y="248">open seating on concourse</text>
+<circle cx="56" cy="258" r="2.5" fill="none" stroke="#1976d2" stroke-width="1"/>
+<circle cx="66" cy="258" r="2.5" fill="none" stroke="#1976d2" stroke-width="1"/>
+
+<!-- FOOD COURT -->
+<path d="M365 274 Q488 268 532 302 Q560 330 554 392 Q542 444 512 472 L466 496 Q386 494 360 438 Q336 394 342 328 Z"
+  fill="#b2dfdb" stroke="#2a2a2a" stroke-width="1.8"/>
+<text font-family="Sora, sans-serif" font-size="11" font-weight="500" text-anchor="middle" fill="#004d40" x="448" y="365">FOOD COURT</text>
+<text font-family="Sora, sans-serif" font-size="7.5" text-anchor="middle" fill="#00695c" x="448" y="379">prime facade · dual egress</text>
+
+<!-- FC Exits -->
+<rect x="522" y="338" width="26" height="14" rx="2" fill="#ffeb3b" stroke="#f57f17" stroke-width="1"/>
+<text font-family="Sora, sans-serif" font-size="6" font-weight="500" text-anchor="middle" fill="#e65100" x="535" y="349">EXIT 2</text>
+<rect x="340" y="402" width="14" height="14" rx="2" fill="#ffeb3b" stroke="#f57f17" stroke-width="1"/>
+<text font-family="Sora, sans-serif" font-size="5.5" font-weight="500" text-anchor="middle" fill="#e65100" x="347" y="413">E1</text>
+
+<!-- FC Floor drains -->
+<circle cx="406" cy="452" r="3" fill="none" stroke="#1976d2" stroke-width="1.2"/>
+<circle cx="418" cy="452" r="3" fill="none" stroke="#1976d2" stroke-width="1.2"/>
+<circle cx="430" cy="452" r="3" fill="none" stroke="#1976d2" stroke-width="1.2"/>
+<text font-family="Sora, sans-serif" font-size="6" text-anchor="middle" fill="#1565c0" x="418" y="464">drains</text>
+
+<!-- Grease trap -->
+<rect x="386" y="468" width="46" height="18" rx="3" fill="#d7ccc8" stroke="#795548" stroke-width="1.2"/>
+<text font-family="Sora, sans-serif" font-size="6" font-weight="500" text-anchor="middle" fill="#4e342e" x="409" y="481">GREASE TRAP</text>
+
+<!-- HVAC isolation -->
+<rect x="148" y="272" width="217" height="10" rx="2" fill="#ffccbc" stroke="#e64a19" stroke-width="1" stroke-dasharray="4 2" opacity="0.85"/>
+<text font-family="Sora, sans-serif" font-size="6" font-weight="500" text-anchor="middle" fill="#bf360c" x="256" y="281">HVAC isolation — grease / refrigeration</text>
+
+<!-- LOADING BOH -->
+<rect x="36" y="36" width="103" height="72" rx="3" fill="#cfd8dc" stroke="#78909c" stroke-width="1"/>
+<text font-family="Sora, sans-serif" font-size="10" font-weight="500" text-anchor="middle" fill="#37474f" x="87" y="68">LOADING /</text>
+<text font-family="Sora, sans-serif" font-size="10" font-weight="500" text-anchor="middle" fill="#37474f" x="87" y="82">BOH</text>
+
+<!-- Waste staging -->
+<rect x="36" y="108" width="48" height="30" rx="3" fill="#efebe9" stroke="#795548" stroke-width="1.2"/>
+<text font-family="Sora, sans-serif" font-size="6" font-weight="500" text-anchor="middle" fill="#4e342e" x="60" y="122">WASTE</text>
+<text font-family="Sora, sans-serif" font-size="6" font-weight="500" text-anchor="middle" fill="#4e342e" x="60" y="131">STAGE</text>
+
+<!-- Fire Stair 1 -->
+<rect x="84" y="108" width="42" height="30" rx="3" fill="#ffcdd2" stroke="#c62828" stroke-width="1.5"/>
+<text font-family="Sora, sans-serif" font-size="6" font-weight="500" text-anchor="middle" fill="#b71c1c" x="105" y="122">FIRE</text>
+<text font-family="Sora, sans-serif" font-size="6" font-weight="500" text-anchor="middle" fill="#b71c1c" x="105" y="131">STAIR 1</text>
+
+<!-- Residential Lobby -->
+<rect x="36" y="142" width="106" height="56" rx="3" fill="#fce4ec" stroke="#e91e63" stroke-width="1.2"/>
+<text font-family="Sora, sans-serif" font-size="9" font-weight="500" text-anchor="middle" fill="#880e4f" x="89" y="166">RESIDENTIAL</text>
+<text font-family="Sora, sans-serif" font-size="9" font-weight="500" text-anchor="middle" fill="#880e4f" x="89" y="179">LOBBY</text>
+<text font-family="Sora, sans-serif" font-size="6.5" text-anchor="middle" fill="#ad1457" x="89" y="192">private entry</text>
+
+<!-- SERVICE CORRIDOR — full BOH spine vertical -->
+<rect x="36" y="282" width="12" height="210" rx="2" fill="#a1887f" stroke="#6d4c41" stroke-width="1" opacity="0.7"/>
+<!-- Service corridor horizontal to food court -->
+<rect x="36" y="484" width="328" height="12" rx="2" fill="#a1887f" stroke="#6d4c41" stroke-width="1" opacity="0.7"/>
+<text font-family="Sora, sans-serif" font-size="6" fill="#3e2723" transform="translate(43,390) rotate(-90)" text-anchor="middle">service corridor — BOH spine</text>
+<text font-family="Sora, sans-serif" font-size="6" fill="#3e2723" x="130" y="494">→ food court service access</text>
+
+<!-- Delivery arrow -->
+<line x1="42" y1="82" x2="42" y2="282" stroke="#6d4c41" stroke-width="1" opacity="0.6" marker-end="url(#arr)"/>
+
+<!-- Fire Stair 2 -->
+<rect x="362" y="470" width="20" height="24" rx="3" fill="#ffcdd2" stroke="#c62828" stroke-width="1.5"/>
+<text font-family="Sora, sans-serif" font-size="5.5" font-weight="500" text-anchor="middle" fill="#b71c1c" x="372" y="483">FS</text>
+<text font-family="Sora, sans-serif" font-size="5.5" font-weight="500" text-anchor="middle" fill="#b71c1c" x="372" y="491">2</text>
+
+<!-- Luxury Retail -->
+<rect x="49" y="286" width="93" height="60" rx="3" fill="#ede7f6" stroke="#7b1fa2" stroke-width="1.2"/>
+<text font-family="Sora, sans-serif" font-size="9" font-weight="500" text-anchor="middle" fill="#4a148c" x="95" y="312">LUXURY</text>
+<text font-family="Sora, sans-serif" font-size="9" font-weight="500" text-anchor="middle" fill="#4a148c" x="95" y="325">RETAIL</text>
+<text font-family="Sora, sans-serif" font-size="6.5" text-anchor="middle" fill="#6a1b9a" x="95" y="339">captive resident traffic</text>
+
+<!-- Salon / Spa -->
+<rect x="49" y="356" width="93" height="50" rx="3" fill="#f8bbd0" stroke="#c2185b" stroke-width="1.2"/>
+<text font-family="Sora, sans-serif" font-size="9" font-weight="500" text-anchor="middle" fill="#880e4f" x="95" y="379">SALON / SPA</text>
+<text font-family="Sora, sans-serif" font-size="6.5" text-anchor="middle" fill="#ad1457" x="95" y="393">luxury corridor</text>
+
+<!-- MEP CORE -->
+<rect x="148" y="36" width="46" height="46" rx="3" fill="#b0bec5" stroke="#455a64" stroke-width="1.8" stroke-dasharray="4 2"/>
+<text font-family="Sora, sans-serif" font-size="7.5" font-weight="500" text-anchor="middle" fill="#263238" x="171" y="56">MEP</text>
+<text font-family="Sora, sans-serif" font-size="7.5" font-weight="500" text-anchor="middle" fill="#263238" x="171" y="68">CORE</text>
+
+<!-- Elec room -->
+<rect x="148" y="82" width="46" height="28" rx="3" fill="#fff3e0" stroke="#e65100" stroke-width="1.2"/>
+<text font-family="Sora, sans-serif" font-size="6.5" font-weight="500" text-anchor="middle" fill="#bf360c" x="171" y="98">ELEC. ROOM</text>
+
+<!-- Restroom A -->
+<rect x="200" y="36" width="56" height="46" rx="3" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5" stroke-dasharray="3 2"/>
+<text font-family="Sora, sans-serif" font-size="7" font-weight="500" text-anchor="middle" fill="#e65100" x="228" y="56">RESTRM A</text>
+<text font-family="Sora, sans-serif" font-size="6" text-anchor="middle" fill="#bf360c" x="228" y="68">shared wall · adj MEP</text>
+<line x1="194" y1="58" x2="200" y2="58" stroke="#f57f17" stroke-width="3" stroke-linecap="round"/>
+
+<!-- Restroom B -->
+<rect x="434" y="470" width="58" height="36" rx="3" fill="#fff9c4" stroke="#f57f17" stroke-width="1.5" stroke-dasharray="3 2"/>
+<text font-family="Sora, sans-serif" font-size="7" font-weight="500" text-anchor="middle" fill="#e65100" x="463" y="486">RESTRM B</text>
+<text font-family="Sora, sans-serif" font-size="6" text-anchor="middle" fill="#bf360c" x="463" y="498">FC + museum</text>
+
+<!-- Pipe run -->
+<path d="M171 110 L171 476 L434 476 L434 488" fill="none" stroke="#f57f17" stroke-width="1" stroke-dasharray="5 3" opacity="0.5"/>
+
+<!-- Subpanels -->
+<rect x="262" y="36" width="16" height="14" rx="2" fill="#fff9c4" stroke="#f57f17" stroke-width="1" stroke-dasharray="2 1"/>
+<text font-family="Sora, sans-serif" font-size="5" text-anchor="middle" fill="#e65100" x="270" y="46">EG</text>
+<rect x="342" y="278" width="16" height="14" rx="2" fill="#fff9c4" stroke="#f57f17" stroke-width="1" stroke-dasharray="2 1"/>
+<text font-family="Sora, sans-serif" font-size="5" text-anchor="middle" fill="#e65100" x="350" y="288">EF</text>
+
+<!-- L-WALKWAY vertical -->
+<rect x="148" y="282" width="18" height="128" rx="2" fill="#e8e021" stroke="#c6b800" stroke-width="1.5" opacity="0.88"/>
+<text font-family="Sora, sans-serif" font-size="7" font-weight="500" fill="#7a6f00" x="151" y="298">↓</text>
+
+<!-- L-WALKWAY horizontal -->
+<rect x="148" y="400" width="200" height="18" rx="2" fill="#e8e021" stroke="#c6b800" stroke-width="1.5" opacity="0.88"/>
+<text font-family="Sora, sans-serif" font-size="7" font-weight="500" fill="#7a6f00" x="218" y="413">→ walkway</text>
+
+<!-- MUSEUM -->
+<rect x="166" y="282" width="126" height="72" rx="3" fill="#c8e6c9" stroke="#388e3c" stroke-width="1.2"/>
+<text font-family="Sora, sans-serif" font-size="10" font-weight="500" text-anchor="middle" fill="#1b5e20" x="229" y="314">MUSEUM</text>
+<text font-family="Sora, sans-serif" font-size="7" text-anchor="middle" fill="#2e7d32" x="229" y="328">traffic driver</text>
+
+<!-- Buffer -->
+<rect x="292" y="282" width="48" height="72" rx="2" fill="#f3e5f5" stroke="#ab47bc" stroke-width="0.8" stroke-dasharray="3 2"/>
+<text font-family="Sora, sans-serif" font-size="7" text-anchor="middle" fill="#6a1b9a" x="316" y="318">buffer</text>
+
+<!-- JEWELRY -->
+<rect x="166" y="354" width="84" height="46" rx="3" fill="#b3e5fc" stroke="#0277bd" stroke-width="1"/>
+<text font-family="Sora, sans-serif" font-size="10" font-weight="500" text-anchor="middle" fill="#01579b" x="208" y="381">JEWELRY</text>
+
+<!-- CLOTHING -->
+<rect x="250" y="354" width="90" height="46" rx="3" fill="#b3e5fc" stroke="#0277bd" stroke-width="1"/>
+<text font-family="Sora, sans-serif" font-size="10" font-weight="500" text-anchor="middle" fill="#01579b" x="295" y="381">CLOTHING</text>
+
+<!-- SPORTSWEAR -->
+<rect x="148" y="418" width="96" height="54" rx="3" fill="#b3e5fc" stroke="#0277bd" stroke-width="1"/>
+<text font-family="Sora, sans-serif" font-size="9" font-weight="500" text-anchor="middle" fill="#01579b" x="196" y="446">SPORTSWEAR</text>
+<text font-family="Sora, sans-serif" font-size="6.5" text-anchor="middle" fill="#0277bd" x="196" y="459">destination</text>
+
+<!-- POP-UP -->
+<rect x="248" y="418" width="100" height="54" rx="3" fill="#fff8e1" stroke="#ff8f00" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text font-family="Sora, sans-serif" font-size="9" font-weight="500" text-anchor="middle" fill="#e65100" x="298" y="442">POP-UP /</text>
+<text font-family="Sora, sans-serif" font-size="9" font-weight="500" text-anchor="middle" fill="#e65100" x="298" y="456">FLEX SPACE</text>
+
+<!-- COLUMN DOTS -->
+<g fill="#555" opacity="0.4">
+  <circle cx="50" cy="50" r="3.5"/><circle cx="150" cy="50" r="3.5"/>
+  <circle cx="250" cy="50" r="3.5"/><circle cx="350" cy="50" r="3.5"/>
+  <circle cx="450" cy="50" r="3.5"/>
+  <circle cx="50" cy="150" r="3.5"/><circle cx="150" cy="150" r="2.5"/>
+  <circle cx="250" cy="150" r="2.5"/><circle cx="350" cy="150" r="2.5"/>
+  <circle cx="50" cy="250" r="3.5"/><circle cx="150" cy="250" r="2.5"/>
+  <circle cx="250" cy="250" r="2.5"/><circle cx="350" cy="250" r="2.5"/>
+  <circle cx="50" cy="350" r="3.5"/><circle cx="150" cy="350" r="2.5"/>
+  <circle cx="250" cy="350" r="2.5"/>
+  <circle cx="50" cy="450" r="3.5"/><circle cx="150" cy="450" r="2.5"/>
+</g>
+
+<!-- Bay dims -->
+<g stroke="#999" stroke-width="0.5" opacity="0.5">
+  <line x1="50" y1="18" x2="150" y2="18"/><line x1="150" y1="18" x2="250" y2="18"/>
+  <line x1="250" y1="18" x2="350" y2="18"/><line x1="350" y1="18" x2="450" y2="18"/>
+  <line x1="50" y1="15" x2="50" y2="21"/><line x1="150" y1="15" x2="150" y2="21"/>
+  <line x1="250" y1="15" x2="250" y2="21"/><line x1="350" y1="15" x2="350" y2="21"/>
+  <line x1="450" y1="15" x2="450" y2="21"/>
+</g>
+<text font-family="Sora, sans-serif" font-size="7" text-anchor="middle" fill="#888" x="100" y="13">28'-0"</text>
+<text font-family="Sora, sans-serif" font-size="7" text-anchor="middle" fill="#888" x="200" y="13">28'-0"</text>
+<text font-family="Sora, sans-serif" font-size="7" text-anchor="middle" fill="#888" x="300" y="13">28'-0"</text>
+<text font-family="Sora, sans-serif" font-size="7" text-anchor="middle" fill="#888" x="400" y="13">28'-0"</text>
+
+<!-- North arrow -->
+<g transform="translate(490,555)">
+  <circle cx="0" cy="0" r="15" fill="none" stroke="#888" stroke-width="1"/>
+  <path d="M0 -11 L3 3 L0 1 L-3 3 Z" fill="#444"/>
+  <path d="M0 1 L3 3 L0 11 L-3 3 Z" fill="#bbb"/>
+  <text font-family="Sora, sans-serif" font-size="7.5" font-weight="500" text-anchor="middle" fill="#555" x="0" y="-15">N</text>
+</g>
+
+<!-- Scale bar -->
+<g transform="translate(422,542)">
+  <line x1="0" y1="0" x2="50" y2="0" stroke="#666" stroke-width="1.5"/>
+  <line x1="0" y1="-3" x2="0" y2="3" stroke="#666" stroke-width="1.5"/>
+  <line x1="25" y1="-2" x2="25" y2="2" stroke="#666" stroke-width="1"/>
+  <line x1="50" y1="-3" x2="50" y2="3" stroke="#666" stroke-width="1.5"/>
+  <text font-family="Sora, sans-serif" font-size="7" fill="#666" x="0" y="12">0</text>
+  <text font-family="Sora, sans-serif" font-size="7" text-anchor="middle" fill="#666" x="25" y="12">25'</text>
+  <text font-family="Sora, sans-serif" font-size="7" text-anchor="end" fill="#666" x="50" y="12">50'</text>
+</g>
+
+<!-- ANNOTATION PANEL -->
+<line x1="580" y1="28" x2="580" y2="700" stroke="#ddd" stroke-width="0.8"/>
+<text font-family="Sora, sans-serif" font-size="8.5" font-weight="500" fill="#b71c1c" x="590" y="44">KEY DESIGN DECISIONS</text>
+
+<g font-family="Sora, sans-serif" font-size="7" fill="#333">
+  <circle cx="596" cy="62" r="3.5" fill="#00695c"/>
+  <text x="606" y="65">Grocery + food court on prime facade</text>
+
+  <circle cx="596" cy="82" r="3.5" fill="#fafaf6" stroke="#555" stroke-width="1"/>
+  <text x="606" y="85">Wide arcing concourse — boulevard</text>
+
+  <circle cx="596" cy="102" r="3.5" fill="#e3f2fd" stroke="#1565c0" stroke-width="1"/>
+  <text x="606" y="105">Cafe open on concourse</text>
+  <text font-size="6.5" fill="#666" x="606" y="116">(market hall activation, dwell time)</text>
+
+  <circle cx="596" cy="130" r="3.5" fill="#ef6c00"/>
+  <text x="606" y="133">Inline kiosks along grocery facade</text>
+  <text font-size="6.5" fill="#666" x="606" y="144">(coffee, juice, bakery, grab-and-go)</text>
+
+  <circle cx="596" cy="158" r="3.5" fill="#e8e021" stroke="#c6b800" stroke-width="1"/>
+  <text x="606" y="161">L-walkway: down → right</text>
+  <text font-size="6.5" fill="#666" x="606" y="172">(museum → jewelry → clothing)</text>
+
+  <circle cx="596" cy="186" r="3.5" fill="#a1887f"/>
+  <text x="606" y="189">Service corridor — full BOH spine</text>
+  <text font-size="6.5" fill="#666" x="606" y="200">(loading dock → food court delivery)</text>
+
+  <circle cx="596" cy="214" r="3.5" fill="#efebe9" stroke="#795548" stroke-width="1"/>
+  <text x="606" y="217">Waste staging at loading dock</text>
+
+  <circle cx="596" cy="234" r="3.5" fill="#d7ccc8" stroke="#795548" stroke-width="1"/>
+  <text x="606" y="237">Grease trap — FC code req.</text>
+
+  <circle cx="596" cy="254" r="3.5" fill="#ffcdd2" stroke="#c62828" stroke-width="1"/>
+  <text x="606" y="257">2× fire stairs (lobby + food court)</text>
+
+  <circle cx="596" cy="274" r="3.5" fill="#e91e63"/>
+  <text x="606" y="277">Residential lobby isolated</text>
+
+  <circle cx="596" cy="294" r="3.5" fill="#7b1fa2"/>
+  <text x="606" y="297">Luxury retail adj. to lobby</text>
+  <text font-size="6.5" fill="#666" x="606" y="308">(captive resident audience)</text>
+
+  <circle cx="596" cy="322" r="3.5" fill="#f8bbd0" stroke="#c2185b" stroke-width="1"/>
+  <text x="606" y="325">Salon/spa — luxury corridor</text>
+
+  <circle cx="596" cy="342" r="3.5" fill="#388e3c"/>
+  <text x="606" y="345">Museum as traffic driver</text>
+
+  <circle cx="596" cy="362" r="3.5" fill="#e64a19"/>
+  <text x="606" y="365">HVAC isolation zone</text>
+
+  <circle cx="596" cy="382" r="3.5" fill="#ffeb3b" stroke="#888" stroke-width="1"/>
+  <text x="606" y="385">Dual egress — food court</text>
+
+  <circle cx="596" cy="402" r="3.5" fill="#455a64"/>
+  <text x="606" y="405">MEP core + elec. room</text>
+
+  <circle cx="596" cy="422" r="3.5" fill="#fff9c4" stroke="#f57f17" stroke-width="1"/>
+  <text x="606" y="425">2× restrooms (shared walls)</text>
+
+  <circle cx="596" cy="442" r="3.5" fill="#1976d2"/>
+  <text x="606" y="445">Floor drains clustered</text>
+
+  <circle cx="596" cy="462" r="3.5" fill="#0277bd"/>
+  <text x="606" y="465">Sportswear — destination only</text>
+
+  <circle cx="596" cy="482" r="3.5" fill="#fff8e1" stroke="#ff8f00" stroke-width="1"/>
+  <text x="606" y="485">Pop-up flex near food court</text>
+
+  <circle cx="596" cy="502" r="3.5" fill="#666"/>
+  <text x="606" y="505">Demising walls on column grid</text>
+
+  <circle cx="596" cy="522" r="3.5" fill="#ab47bc"/>
+  <text x="606" y="525">Transition buffer grocery / FC</text>
+
+  <circle cx="596" cy="542" r="3.5" fill="#fff3e0" stroke="#e65100" stroke-width="1"/>
+  <text x="606" y="545">Subpanels at tenant entries</text>
+
+  <circle cx="596" cy="562" r="3.5" fill="#00695c"/>
+  <text x="606" y="565">Grocery clear-span verified</text>
+</g>
+
+<!-- Floor label -->
+<text font-family="Sora, sans-serif" font-size="9" font-weight="500" fill="#555" x="36" y="585">GROUND LEVEL — 144,000 SF Mixed-Use Tower, Hudson Yards NY</text>
+<text font-family="Sora, sans-serif" font-size="7.5" fill="#888" x="36" y="598">Space programming · DD coordination · intern team lead · 2-3 days ahead of QA</text>
+<text font-family="Sora, sans-serif" font-size="7.5" fill="#888" x="36" y="611">23 design decisions · market hall concourse · luxury corridor · revenue-optimized mix</text>
+
+</svg>
