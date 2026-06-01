@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import {
   ExternalLinkIcon,
   ChevronLeftIcon,
@@ -804,16 +803,6 @@ export function Projects() {
                 {selectedProject.description}
               </p>
               <SlideCarousel slides={selectedProject.slides} />
-              {selectedProject.title === 'Quantitative Research: Multi-Asset Systematic Strategy' && (
-                <div className="mt-6 pt-6 border-t border-warm-100 flex items-center justify-between">
-                  <p className="font-body text-sm text-gray-400">Want the methodology overview?</p>
-                  <Link
-                    to="/deep-dives#quant"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-white font-body text-sm font-semibold rounded-lg hover:bg-accent-dark transition-colors">
-                    Read the methodology →
-                  </Link>
-                </div>
-              )}
             </div>
           </div>
         </motion.div>
@@ -890,16 +879,6 @@ export function Projects() {
                       {selectedProject.description}
                     </p>
                     <SlideCarousel slides={selectedProject.slides} />
-                    {selectedProject.title === 'Quantitative Research: Multi-Asset Systematic Strategy' && (
-                      <div className="mt-6 pt-6 border-t border-warm-100 flex items-center justify-between">
-                        <p className="font-body text-sm text-gray-400">Want the methodology overview?</p>
-                        <Link
-                          to="/deep-dives#quant"
-                          className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-white font-body text-sm font-semibold rounded-lg hover:bg-accent-dark transition-colors">
-                          Read the methodology →
-                        </Link>
-                      </div>
-                    )}
                   </div>
                 </div>
               </motion.div>

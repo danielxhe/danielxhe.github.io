@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeftIcon, ExternalLinkIcon, FileTextIcon } from 'lucide-react';
+import { ArrowLeftIcon, ExternalLinkIcon, FileTextIcon, GithubIcon } from 'lucide-react';
+
+interface Artifact {
+  label: string;
+  url: string;
+  kind: 'doc' | 'repo' | 'app';
+}
 
 interface DeepDive {
   id: string;
@@ -12,6 +18,7 @@ interface DeepDive {
   readTime: string;
   url: string;
   status?: 'live' | 'in-progress';
+  artifacts?: Artifact[];
 }
 
 // NOTE: replace the url fields with the real Google Doc links.
@@ -19,9 +26,9 @@ const deepDives: DeepDive[] = [
   {
     id: 'event-planner',
     kind: 'Case Study',
-    title: 'Partiful Potluck Extension: Identifying a Feature Gap and Shipping V1.1',
+    title: 'Spread: A Partiful Companion for Potlucks',
     tldr:
-      'Partiful handles RSVPs but leaves potluck coordination to text threads and shared docs. This case study walks through identifying the gap, scoping a Next.js + Notion extension, and shipping V1.1 Category Balance: a servings-based dot board that scales per-category targets to live RSVP headcount (Yes plus plus-ones plus half of Maybes), with host overrides surfaced as pills. Covers the locked stack, a PRD with success metrics and a decisions log, the Phase 1 manual-stub to V2.1 Claude-API roadmap for the AI dish suggester (built to ship product value first and earn eval data before swapping in the LLM), and surprise-event semantics baked in for the 2026-06-06 dogfood launch. Real artifacts: SPEC.md, PRD-V1.1-category-balance, 5 Notion databases, 13 typed API routes, host dashboard with category targets panel, and guest event page.',
+      'Partiful handles RSVPs but leaves potluck coordination to text threads and shared docs. Spread is the companion app that closes that gap. This case study walks through identifying the gap, scoping a Next.js + Notion build, and shipping V1.1 Category Balance: a servings-based dot board that scales per-category targets to live RSVP headcount (Yes plus plus-ones plus half of Maybes), with host overrides surfaced as pills. Covers the locked stack, a PRD with success metrics and a decisions log, the Phase 1 manual-stub to V2.1 Claude-API roadmap for the AI dish suggester (built to ship product value first and earn eval data before swapping in the LLM), and surprise-event semantics baked in for the 2026-06-06 dogfood launch. Real artifacts: SPEC.md, PRD-V1.1-category-balance, 5 Notion databases, 13 typed API routes, host dashboard with category targets panel, and guest event page.',
     skills: [
       'Identifying product gaps',
       'PRD writing with success metrics',
@@ -32,23 +39,28 @@ const deepDives: DeepDive[] = [
     readTime: 'Independent project · V1.1 case study',
     url: '#',
     status: 'in-progress',
-  },
-  {
-    id: 'quant',
-    kind: 'Methodology',
-    title: 'Quantitative Research Methodology',
-    tldr:
-      'A walkthrough of how I run independent quantitative research. The catalogue holds real-world signal-to-futures hypotheses, each pre-registered before any backtest. Pre-registered candidates then run through a standard validation stack: walk-forward cross-validation, permutation tests, bootstrap confidence intervals, multiple-testing correction, and cost stress. This piece covers the process and the recurring patterns that kill most ideas. Strategy specifics stay proprietary.',
-    skills: [
-      'Hypothesis pre-registration',
-      'Walk-forward validation',
-      'Permutation and bootstrap testing',
-      'Multi-asset backtesting',
-      'Multiple-testing correction',
+    artifacts: [
+      {
+        label: 'V2 Spec (coming soon)',
+        url: '#',
+        kind: 'doc',
+      },
+      {
+        label: 'PRD V1.1: Category Balance (coming soon)',
+        url: '#',
+        kind: 'doc',
+      },
+      {
+        label: 'GitHub repo',
+        url: 'https://github.com/danielxhe/event-planner',
+        kind: 'repo',
+      },
+      {
+        label: 'Live app (coming soon)',
+        url: '#',
+        kind: 'app',
+      },
     ],
-    readTime: 'Independent research · methodology overview',
-    url: '#',
-    status: 'in-progress',
   },
   {
     id: 'varsity',
@@ -187,6 +199,43 @@ export function DeepDives() {
                     </span>
                   ))}
                 </div>
+
+                {/* Artifacts */}
+                {dive.artifacts && dive.artifacts.length > 0 && (
+                  <div className="mt-4">
+                    <p className="font-body text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+                      Artifacts
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {dive.artifacts.map((a) => {
+                        const isPlaceholder = a.url === '#';
+                        const Icon = a.kind === 'repo' ? GithubIcon : a.kind === 'app' ? ExternalLinkIcon : FileTextIcon;
+                        const baseClasses = 'inline-flex items-center gap-1.5 px-3 py-1.5 font-body text-xs font-medium rounded-md border transition-colors';
+                        if (isPlaceholder) {
+                          return (
+                            <span
+                              key={a.label}
+                              className={`${baseClasses} text-gray-400 border-warm-100 bg-warm-50 cursor-default`}>
+                              <Icon className="w-3.5 h-3.5" />
+                              {a.label}
+                            </span>
+                          );
+                        }
+                        return (
+                          <a
+                            key={a.label}
+                            href={a.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`${baseClasses} text-accent border-orange-200 bg-accent-light hover:bg-accent hover:text-white hover:border-accent`}>
+                            <Icon className="w-3.5 h-3.5" />
+                            {a.label}
+                          </a>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
 
                 {/* Footer row */}
                 <div className="mt-5 flex items-center justify-between gap-4 flex-wrap">

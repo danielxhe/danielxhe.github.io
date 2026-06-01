@@ -15,36 +15,23 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    name: 'Project Execution & Leadership',
+    name: 'Product & Project Leadership',
     skills: [
-      { name: 'Milestone Tracking', evidence: 'Hudson Yards · Design Development schedule' },
-      { name: 'Gantt Charts', evidence: 'Hudson Yards · 144,000 SF tower schedule' },
-      { name: 'Scope Management', evidence: 'Hudson Yards · ground-floor space programming' },
-      { name: 'Risk Mitigation', evidence: 'Event Planner V2 · 6-item risk register' },
-      { name: 'Deadline Delivery', evidence: 'Hudson Yards · 2-3 days ahead of biweekly QA deadlines' },
-      { name: 'SOP Development', evidence: 'Quant research · pre-registration template' },
-      { name: 'Team Leadership', evidence: 'Hudson Yards · 4-person intern team' },
+      { name: 'MVP Scoping', evidence: 'Spread · V2.0 vs V2.1 cut decisions' },
+      { name: 'Roadmapping', evidence: 'Spread · Phase 1 to Phase 2 product strategy' },
       { name: 'Cross-functional Coordination', evidence: 'Hudson Yards · structural, architectural, MEP' },
-      { name: 'Client Management', evidence: 'Hudson Yards · vendor & MEP stakeholders' },
-      { name: 'Upward Reporting', evidence: 'Syska Hennessy · biweekly QA reporting to senior PMs' },
-    ],
-  },
-  {
-    name: 'Product & Strategy',
-    skills: [
-      { name: 'MVP Scoping', evidence: 'Event Planner V2 · V2.0 vs V2.1 cut decisions' },
-      { name: 'Data-Informed Decisions', evidence: 'Math Ghost · A/B testing & engagement analytics' },
       { name: 'A/B Testing', evidence: 'Math Ghost · format & cadence testing' },
-      { name: 'Roadmapping', evidence: 'Event Planner V2 · Phase 1 to Phase 2 product strategy' },
+      { name: 'Data-Informed Decisions', evidence: 'Math Ghost · engagement analytics drove content choices' },
       { name: 'Hypothesis Testing', evidence: 'Quant research · pre-registered backtests' },
+      { name: 'Risk Mitigation', evidence: 'Spread · 6-item risk register' },
+      { name: 'Deadline Delivery', evidence: 'Hudson Yards · 2-3 days ahead of biweekly QA deadlines' },
+      { name: 'Team Leadership', evidence: 'Hudson Yards · 4-person intern team' },
     ],
   },
   {
-    name: 'Productivity & Design',
+    name: 'Productivity',
     skills: [
       { name: 'Notion' },
-      { name: 'Slack' },
-      { name: 'Teams' },
       { name: 'Google Suite' },
       { name: 'Microsoft Office' },
       { name: 'Figma' },
@@ -57,7 +44,6 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'Excel' },
       { name: 'Python (Pandas, NumPy, SciPy)', evidence: 'Quant research · full data pipeline, backtests, statistical tests' },
-      { name: 'Google Colab' },
       { name: 'Claude & GPT-4 Prompting', evidence: 'Deep-dive research & portfolio build' },
       { name: 'API Integration', evidence: 'Quant research · 5 external data source integrations' },
     ],
