@@ -74,8 +74,8 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}>
               <motion.div animate={{ y: [0, -6, 0] }} transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
-                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Acquisition</p>
-                <p className="font-display text-2xl font-bold text-accent">Zero CAC</p>
+                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Strategies Tested</p>
+                <p className="font-display text-2xl font-bold text-accent">62</p>
               </motion.div>
             </motion.div>
             <motion.div
@@ -94,8 +94,8 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.2, ease: 'easeOut' }}>
               <motion.div animate={{ y: [0, -4, 0] }} transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
-                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Clients</p>
-                <p className="font-display text-2xl font-bold text-accent">10</p>
+                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Brand Deals</p>
+                <p className="font-display text-2xl font-bold text-accent">$15K+</p>
               </motion.div>
             </motion.div>
             <motion.div
@@ -104,8 +104,8 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.5, ease: 'easeOut' }}>
               <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
-                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Role</p>
-                <p className="font-display text-2xl font-bold text-accent">Founder</p>
+                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Hudson Yards</p>
+                <p className="font-display text-2xl font-bold text-accent">144K SF</p>
               </motion.div>
             </motion.div>
           </div>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" font-family="Helvetica Neue, Inter, Arial, sans-serif">
+  <rect width="640" height="400" fill="#FFFFFF"/>
+
+  <text x="40" y="42" font-size="22" font-weight="700" fill="#0F172A">Pre-Registration</text>
+  <text x="40" y="62" font-size="13" fill="#64748B">spec locked before any data is loaded</text>
+
+  <line x1="40" y1="76" x2="600" y2="76" stroke="#E2E8F0" stroke-width="1"/>
+
+  <rect x="60" y="92" width="520" height="296" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+
+  <rect x="60" y="92" width="520" height="36" rx="8" fill="#F1F5F9"/>
+  <rect x="60" y="122" width="520" height="6" fill="#F1F5F9"/>
+  <text x="80" y="116" font-size="12" font-weight="700" fill="#0F172A">Strategy Pre-Registration</text>
+  <text x="560" y="116" font-size="11" fill="#64748B" text-anchor="end">v1 · locked</text>
+
+  <g>
+    <text x="80" y="152" font-size="10" font-weight="700" fill="#64748B" letter-spacing="0.5">SIGNAL</text>
+    <text x="80" y="170" font-size="12" fill="#1E293B">precise definition plus parameter ranges</text>
+    <line x1="80" y1="182" x2="560" y2="182" stroke="#E2E8F0" stroke-width="1"/>
+
+    <text x="80" y="201" font-size="10" font-weight="700" fill="#64748B" letter-spacing="0.5">ASSET AND DIRECTION</text>
+    <text x="80" y="219" font-size="12" fill="#1E293B">contract symbol, long or short rule</text>
+    <line x1="80" y1="231" x2="560" y2="231" stroke="#E2E8F0" stroke-width="1"/>
+
+    <text x="80" y="250" font-size="10" font-weight="700" fill="#64748B" letter-spacing="0.5">ENTRY AND EXIT</text>
+    <text x="80" y="268" font-size="12" fill="#1E293B">trigger condition, hold window, stop rule</text>
+    <line x1="80" y1="280" x2="560" y2="280" stroke="#E2E8F0" stroke-width="1"/>
+
+    <text x="80" y="299" font-size="10" font-weight="700" fill="#64748B" letter-spacing="0.5">SAMPLE WINDOW</text>
+    <text x="80" y="317" font-size="12" fill="#1E293B">train and test split, walk-forward folds</text>
+    <line x1="80" y1="329" x2="560" y2="329" stroke="#E2E8F0" stroke-width="1"/>
+
+    <text x="80" y="348" font-size="10" font-weight="700" fill="#64748B" letter-spacing="0.5">KILL CRITERIA</text>
+    <text x="80" y="366" font-size="12" fill="#1E293B">written failure thresholds. Strategy dies if hit.</text>
+  </g>
+
+  <g>
+    <circle cx="540" cy="166" r="9" fill="#2563EB"/>
+    <path d="M 535.5 166 L 539 169 L 545 163" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="540" cy="215" r="9" fill="#2563EB"/>
+    <path d="M 535.5 215 L 539 218 L 545 212" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="540" cy="264" r="9" fill="#2563EB"/>
+    <path d="M 535.5 264 L 539 267 L 545 261" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="540" cy="313" r="9" fill="#2563EB"/>
+    <path d="M 535.5 313 L 539 316 L 545 310" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="540" cy="362" r="9" fill="#2563EB"/>
+    <path d="M 535.5 362 L 539 365 L 545 359" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

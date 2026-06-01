@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" font-family="Helvetica Neue, Inter, Arial, sans-serif">
+  <rect width="640" height="400" fill="#FFFFFF"/>
+
+  <text x="40" y="46" font-size="22" font-weight="700" fill="#0F172A">Hypothesis Outcomes</text>
+  <text x="40" y="68" font-size="13" fill="#64748B">where 62 catalogued hypotheses end up</text>
+
+  <line x1="40" y1="84" x2="600" y2="84" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!--
+    Geometry:
+      Source bar:        x = 130 to 140, y = 110 to 290  (height 180, ratio 60)
+        segment killed_review: y 110-200  (90 / 180)
+        segment paused:        y 200-239  (39 / 180)
+        segment prereg:        y 239-290  (51 / 180)
+
+      First-stage bars at x = 360 to 370:
+        killed_review: y =  92 to 212  (height 120)
+        paused:        y = 228 to 280  (height 52)
+        prereg:        y = 296 to 364  (height 68)
+
+      Second-stage bars at x = 540 to 550 (from prereg only):
+        killed_validation: y = 290 to 350 (height 60)
+        survived:          y = 358 to 378 (height 20, exaggerated for visibility)
+  -->
+
+  <!-- Ribbon 1: source killed segment to first-stage killed_review bar -->
+  <path d="M 140 110 C 250 110, 250 92, 360 92 L 360 212 C 250 212, 250 200, 140 200 Z"
+        fill="#94A3B8" opacity="0.55"/>
+
+  <!-- Ribbon 2: source paused segment to paused bar -->
+  <path d="M 140 200 C 250 200, 250 228, 360 228 L 360 280 C 250 280, 250 239, 140 239 Z"
+        fill="#94A3B8" opacity="0.4"/>
+
+  <!-- Ribbon 3: source prereg segment to prereg bar (blue, alive) -->
+  <path d="M 140 239 C 250 239, 250 296, 360 296 L 360 364 C 250 364, 250 290, 140 290 Z"
+        fill="#2563EB" opacity="0.5"/>
+
+  <!-- Ribbon 4: prereg right side to killed_validation -->
+  <path d="M 370 296 C 455 296, 455 290, 540 290 L 540 350 C 455 350, 455 348, 370 348 Z"
+        fill="#94A3B8" opacity="0.55"/>
+
+  <!-- Ribbon 5: prereg right side bottom slice to survived (green) -->
+  <path d="M 370 348 C 455 348, 455 358, 540 358 L 540 378 C 455 378, 455 364, 370 364 Z"
+        fill="#10B981" opacity="0.7"/>
+
+  <!-- Source bar -->
+  <rect x="130" y="110" width="10" height="180" fill="#2563EB"/>
+
+  <!-- First-stage bars -->
+  <rect x="360" y="92"  width="10" height="120" fill="#94A3B8"/>
+  <rect x="360" y="228" width="10" height="52"  fill="#94A3B8"/>
+  <rect x="360" y="296" width="10" height="68"  fill="#2563EB"/>
+
+  <!-- Second-stage bars -->
+  <rect x="540" y="290" width="10" height="60" fill="#94A3B8"/>
+  <rect x="540" y="358" width="10" height="20" fill="#10B981"/>
+
+  <!-- Labels: source on LEFT, others on RIGHT of their bars -->
+
+  <!-- Source label -->
+  <text x="124" y="196" font-size="26" font-weight="700" fill="#0F172A" text-anchor="end">62</text>
+  <text x="124" y="216" font-size="12" fill="#64748B" text-anchor="end">catalogued</text>
+
+  <!-- killed_review -->
+  <text x="380" y="146" font-size="20" font-weight="700" fill="#0F172A">30</text>
+  <text x="380" y="166" font-size="12" font-weight="600" fill="#1E293B">killed at mechanism review</text>
+  <text x="380" y="182" font-size="10" fill="#64748B">story breaks or data unavailable</text>
+
+  <!-- paused -->
+  <text x="380" y="252" font-size="18" font-weight="700" fill="#0F172A">13</text>
+  <text x="380" y="270" font-size="12" font-weight="600" fill="#1E293B">paused, data infeasible</text>
+
+  <!-- prereg -->
+  <text x="380" y="324" font-size="20" font-weight="700" fill="#2563EB">17</text>
+  <text x="380" y="344" font-size="12" font-weight="600" fill="#1E293B">pre-registered and backtested</text>
+  <text x="380" y="360" font-size="10" fill="#64748B">spec locked, validation stack applied</text>
+
+  <!-- killed_validation -->
+  <text x="560" y="316" font-size="18" font-weight="700" fill="#0F172A">16</text>
+  <text x="560" y="334" font-size="11" font-weight="600" fill="#1E293B">killed by validation</text>
+
+  <!-- survived -->
+  <text x="560" y="374" font-size="14" font-weight="700" fill="#10B981">1 survived</text>
+
+  <text x="320" y="396" font-size="10" fill="#94A3B8" text-anchor="middle">survival means candidate for live capital, not a guarantee of forward performance</text>
+</svg>

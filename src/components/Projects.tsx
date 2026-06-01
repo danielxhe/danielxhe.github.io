@@ -17,10 +17,10 @@ import tiktokProfile from '../assets/tiktok_profile.png';
 import tiktokBrandDeal from '../assets/tiktok_brand_deal.png';
 import tiktokTraffic from '../assets/tiktok_traffic.png';
 import partnerly from '../assets/partnerly_logo.png';
-import stemboostHero from '../assets/stemboost_hero.png';
-import stemboostPricing from '../assets/stemboost_pricing.png';
-import stemboostConsult from '../assets/stemboost_consult.png';
-import stemboostTestimonial from '../assets/stemboost_testimonial.png';
+import quantCatalog from '../assets/quant_catalog.svg';
+import quantPrereg from '../assets/quant_prereg.svg';
+import quantValidation from '../assets/quant_validation.svg';
+import quantOutcomes from '../assets/quant_outcomes.svg';
 interface SlideData {
   title: string;
   caption: string;
@@ -107,41 +107,36 @@ const projects: ProjectData[] = [
 
 },
 {
-  title: 'StemboostTutor — Product & Operations',
-  anchorMetric: '10 clients · $0 CAC',
+  title: 'Quantitative Research: Multi-Asset Systematic Strategy',
+  anchorMetric: '62 catalogued · 94% kill rate',
   description:
-  'Founded a tutoring business and built the full operational stack — 3-tier pricing model, product website with integrated booking flow, and a referral acquisition system that achieved zero paid acquisition cost.',
+  'Built a multi-asset quantitative research pipeline at 19V Research across futures and commodities. Catalogued 62 signal-to-futures strategies and ran the full validation stack on every finalist, killing 94% under pre-registered criteria. Engineered the underlying Python pipeline (Pandas, NumPy, SciPy) and integrated five external data sources end to end.',
   metrics: [
-  '2 → 10 clients',
-  '14-point avg improvement',
-  'Zero CAC',
-  'Live website'],
+  '62 strategies catalogued',
+  '94% kill rate',
+  '5 data sources integrated'],
 
-  illustration: <TutoringSVG />,
-  link: {
-    label: 'Visit Live Site',
-    url: 'https://stemboosttutoring.netlify.app/'
-  },
+  illustration: <QuantSVG />,
   slides: [
   {
-    title: 'Landing Page',
-    caption: 'Built a two-page product website with credential-forward hero, tutor profiles, testimonial slideshow, FAQ accordion, and direct booking CTAs. Designed to convert warm referral traffic into consultations. Live at stemboosttutoring.netlify.app.',
-    image: stemboostHero
+    title: 'Mechanism Catalog',
+    caption: 'Catalogued 62 real-world signal-to-futures hypotheses across five buckets: weather and crop conditions, energy disruptions, geopolitical event flow, macro positioning, and physical-commodity dislocations. Each idea is written up with mechanism, expected direction, asset, hold horizon, and data source. The catalogue is built before any data is loaded.',
+    image: quantCatalog
   },
   {
-    title: '3-Tier Pricing Model',
-    caption: 'Replaced flat hourly billing with three tiers: Crisis Fix ($50/hr pay-as-you-go), Mastery Track ($40/hr, 10hrs at $400 upfront), and Honors Bundle ($38/hr, 20hrs at $760 upfront). Credit-based system with upfront payment and 24-hour cancellation policy. Eliminated all manual invoicing.',
-    image: stemboostPricing
+    title: 'Pre-Registration',
+    caption: 'Every strategy is committed to writing before data is touched. The spec covers signal definition, parameter ranges, asset, entry rule, hold window, and kill criteria. This catches the most common quant failure mode: letting the data choose the rules retroactively.',
+    image: quantPrereg
   },
   {
-    title: 'Integrated Booking Flow',
-    caption: 'Onboarding used to take 6-8 emails. Built a consultation form with plan selector, grade and subject dropdowns, and EmailJS-powered submission that sends directly to inbox. Reduced the entire process to 3 touchpoints: form, confirmation email, call.',
-    image: stemboostConsult
+    title: 'Validation Stack',
+    caption: 'Every pre-registered hypothesis runs through a stack of standard robustness checks: out-of-sample testing on held-out data, walk-forward cross-validation, permutation and bootstrap significance tests, correction for multiple testing across the strategy family, and stress under realistic execution costs. Most candidate strategies fail at one of these layers.',
+    image: quantValidation
   },
   {
-    title: 'Referral System and Outcomes',
-    caption: 'Designed a referral system triggered after measurable grade improvements. No incentives, no ads, no marketing spend. Grew from 2 to 10 recurring clients at zero acquisition cost. Average 14-point score improvement per client. Documented results: D to B+, C to A-, B- to A.',
-    image: stemboostTestimonial
+    title: 'Hypothesis Outcomes',
+    caption: 'Of 62 catalogued hypotheses, about half clear mechanism review where the story has to tie back to a plausible economic channel. Of those, 17 advance to pre-registration and full backtesting. Most then fail at one validation layer or another. Common kill patterns include realized-disruption signals already priced into the futures, single-grid-point reanalysis that turns out to be noise rather than weather, and cumulative-event triggers that fire after spot news has already moved. The few that survive every layer become candidates for live capital.',
+    image: quantOutcomes
   }],
 
 }];
@@ -384,148 +379,110 @@ function TikTokSVG() {
     </svg>);
 
 }
-function TutoringSVG() {
+function QuantSVG() {
+  // Anonymized permutation-null distribution: bell curve centered at zero,
+  // observed value sits in the right tail. No numbers, no asset, no axes.
+  // Histogram bars approximated by varying heights.
+  const bars = [
+    4, 6, 9, 13, 19, 27, 36, 46, 56, 64, 70, 72, 70, 64, 56, 46, 36, 27, 19, 13, 9, 6, 4, 2,
+  ];
+  const barWidth = 8;
+  const startX = 30;
+  const baseY = 165;
   return (
     <svg
       viewBox="0 0 320 200"
       className="w-full h-48 rounded-lg"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">
-      
+
       <rect width="320" height="200" rx="8" fill="#FFF7ED" />
-      <rect
-        x="50"
-        y="30"
-        width="220"
-        height="140"
-        rx="6"
+
+      {/* Title */}
+      <text
+        x="160"
+        y="22"
+        fontSize="10"
+        fill="#EA580C"
+        fontFamily="Nunito"
+        textAnchor="middle"
+        fontWeight="700">
+        Shuffle Null vs. Observed
+      </text>
+
+      {/* Histogram bars */}
+      {bars.map((h, i) => (
+        <rect
+          key={i}
+          x={startX + i * barWidth}
+          y={baseY - h}
+          width={barWidth - 1.5}
+          height={h}
+          fill="#FDBA74"
+          opacity={0.85}
+          rx={1}
+        />
+      ))}
+
+      {/* Baseline */}
+      <line
+        x1={startX - 4}
+        y1={baseY}
+        x2={startX + bars.length * barWidth + 2}
+        y2={baseY}
+        stroke="#9CA3AF"
+        strokeWidth="1"
+      />
+
+      {/* Zero line through histogram center */}
+      <line
+        x1={startX + 11 * barWidth + barWidth / 2}
+        y1={baseY - 80}
+        x2={startX + 11 * barWidth + barWidth / 2}
+        y2={baseY}
+        stroke="#6B7280"
+        strokeWidth="1"
+        strokeDasharray="2 2"
+      />
+      <text
+        x={startX + 11 * barWidth + barWidth / 2}
+        y={baseY + 12}
+        fontSize="7"
+        fill="#9CA3AF"
+        fontFamily="Nunito"
+        textAnchor="middle">
+        null
+      </text>
+
+      {/* Observed line in right tail */}
+      <line
+        x1={startX + 21 * barWidth + barWidth / 2}
+        y1={baseY - 110}
+        x2={startX + 21 * barWidth + barWidth / 2}
+        y2={baseY}
         stroke="#F97316"
-        strokeWidth="1.5"
-        fill="white" />
-      
-      <rect x="50" y="30" width="220" height="24" rx="6" fill="#FFF7ED" />
-      <circle cx="65" cy="42" r="4" fill="#FED7AA" />
-      <circle cx="78" cy="42" r="4" fill="#FDBA74" />
-      <circle cx="91" cy="42" r="4" fill="#F97316" />
-      <rect x="120" y="38" width="80" height="8" rx="4" fill="white" />
+        strokeWidth="2"
+      />
       <text
-        x="160"
-        y="72"
-        fontSize="11"
+        x={startX + 21 * barWidth + barWidth / 2}
+        y={baseY - 116}
+        fontSize="8"
         fill="#F97316"
         fontFamily="Nunito"
         textAnchor="middle"
         fontWeight="700">
-        
-        StemboostTutor
+        observed
       </text>
-      <rect
-        x="65"
-        y="82"
-        width="55"
-        height="70"
-        rx="4"
-        fill="#FFEDD5"
-        stroke="#FED7AA"
-        strokeWidth="1" />
-      
-      <text
-        x="92"
-        y="98"
-        fontSize="8"
-        fill="#EA580C"
-        fontFamily="Nunito"
-        textAnchor="middle"
-        fontWeight="600">
-        
-        Basic
-      </text>
-      <text
-        x="92"
-        y="115"
-        fontSize="12"
-        fill="#F97316"
-        fontFamily="Nunito"
-        textAnchor="middle"
-        fontWeight="700">
-        
-        $
-      </text>
-      <rect
-        x="132"
-        y="82"
-        width="55"
-        height="70"
-        rx="4"
-        fill="#FED7AA"
-        stroke="#FDBA74"
-        strokeWidth="1" />
-      
+
+      {/* Label */}
       <text
         x="160"
-        y="98"
+        y={baseY + 26}
         fontSize="8"
-        fill="#EA580C"
+        fill="#9CA3AF"
         fontFamily="Nunito"
-        textAnchor="middle"
-        fontWeight="600">
-        
-        Standard
-      </text>
-      <text
-        x="160"
-        y="115"
-        fontSize="12"
-        fill="#F97316"
-        fontFamily="Nunito"
-        textAnchor="middle"
-        fontWeight="700">
-        
-        $$
-      </text>
-      <rect
-        x="200"
-        y="82"
-        width="55"
-        height="70"
-        rx="4"
-        fill="#FDBA74"
-        stroke="#F97316"
-        strokeWidth="1" />
-      
-      <text
-        x="228"
-        y="98"
-        fontSize="8"
-        fill="#EA580C"
-        fontFamily="Nunito"
-        textAnchor="middle"
-        fontWeight="600">
-        
-        Premium
-      </text>
-      <text
-        x="228"
-        y="115"
-        fontSize="12"
-        fill="#F97316"
-        fontFamily="Nunito"
-        textAnchor="middle"
-        fontWeight="700">
-        
-        $$$
-      </text>
-      <rect x="125" y="135" width="70" height="18" rx="9" fill="#F97316" />
-      <text
-        x="160"
-        y="148"
-        fontSize="8"
-        fill="white"
-        fontFamily="Nunito"
-        textAnchor="middle"
-        fontWeight="600">
-        
-        Book Now
+        textAnchor="middle">
+        pre-registered · walk-forward · shuffle null
       </text>
     </svg>);
 
@@ -847,13 +804,13 @@ export function Projects() {
                 {selectedProject.description}
               </p>
               <SlideCarousel slides={selectedProject.slides} />
-              {selectedProject.title === 'StemboostTutor — Product & Operations' && (
+              {selectedProject.title === 'Quantitative Research: Multi-Asset Systematic Strategy' && (
                 <div className="mt-6 pt-6 border-t border-warm-100 flex items-center justify-between">
-                  <p className="font-body text-sm text-gray-400">Want the full story?</p>
+                  <p className="font-body text-sm text-gray-400">Want the methodology overview?</p>
                   <Link
-                    to="/deep-dives#stemboost"
+                    to="/deep-dives#quant"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-white font-body text-sm font-semibold rounded-lg hover:bg-accent-dark transition-colors">
-                    Read the full case study →
+                    Read the methodology →
                   </Link>
                 </div>
               )}
@@ -933,13 +890,13 @@ export function Projects() {
                       {selectedProject.description}
                     </p>
                     <SlideCarousel slides={selectedProject.slides} />
-                    {selectedProject.title === 'StemboostTutor — Product & Operations' && (
+                    {selectedProject.title === 'Quantitative Research: Multi-Asset Systematic Strategy' && (
                       <div className="mt-6 pt-6 border-t border-warm-100 flex items-center justify-between">
-                        <p className="font-body text-sm text-gray-400">Want the full story?</p>
+                        <p className="font-body text-sm text-gray-400">Want the methodology overview?</p>
                         <Link
-                          to="/deep-dives#stemboost"
+                          to="/deep-dives#quant"
                           className="inline-flex items-center gap-2 px-4 py-2 bg-accent text-white font-body text-sm font-semibold rounded-lg hover:bg-accent-dark transition-colors">
-                          Read the full case study →
+                          Read the methodology →
                         </Link>
                       </div>
                     )}

@@ -17,21 +17,38 @@ interface DeepDive {
 // NOTE: replace the url fields with the real Google Doc links.
 const deepDives: DeepDive[] = [
   {
-    id: 'stemboost',
+    id: 'event-planner',
     kind: 'Case Study',
-    title: 'StemboostTutor — Building a Tutoring Business from Zero',
+    title: 'Partiful Potluck Extension: Identifying a Feature Gap and Shipping V1.1',
     tldr:
-      'How I founded and ran a tutoring business that grew from 2 to 10 recurring clients across a 3-tutor team, delivered 500+ billable hours, and averaged a 14-point score improvement per client, all with zero paid acquisition cost. Covers the pricing model, onboarding system, credit-based billing, and referral pipeline.',
+      'Partiful handles RSVPs but leaves potluck coordination to text threads and shared docs. This case study walks through identifying the gap, scoping a Next.js + Notion extension, and shipping V1.1 Category Balance: a servings-based dot board that scales per-category targets to live RSVP headcount (Yes plus plus-ones plus half of Maybes), with host overrides surfaced as pills. Covers the locked stack, a PRD with success metrics and a decisions log, the Phase 1 manual-stub to V2.1 Claude-API roadmap for the AI dish suggester (built to ship product value first and earn eval data before swapping in the LLM), and surprise-event semantics baked in for the 2026-06-06 dogfood launch. Real artifacts: SPEC.md, PRD-V1.1-category-balance, 5 Notion databases, 13 typed API routes, host dashboard with category targets panel, and guest event page.',
     skills: [
-      'Operations',
-      'Pricing strategy',
-      'Growth from zero',
-      'Systems & process design',
-      'Customer retention',
+      'Identifying product gaps',
+      'PRD writing with success metrics',
+      'Phased AI roadmap (manual stub to API)',
+      'Live-data product UX',
+      'API and data model design',
     ],
-    readTime: 'Founder & Product Lead · ~7 min read',
-    url: 'https://docs.google.com/document/d/1zZq0MF9gyF3s-q0borMyY5zoyW_niaD3/export?format=pdf',
-    status: 'live',
+    readTime: 'Independent project · V1.1 case study',
+    url: '#',
+    status: 'in-progress',
+  },
+  {
+    id: 'quant',
+    kind: 'Methodology',
+    title: 'Quantitative Research Methodology',
+    tldr:
+      'A walkthrough of how I run independent quantitative research. The catalogue holds real-world signal-to-futures hypotheses, each pre-registered before any backtest. Pre-registered candidates then run through a standard validation stack: walk-forward cross-validation, permutation tests, bootstrap confidence intervals, multiple-testing correction, and cost stress. This piece covers the process and the recurring patterns that kill most ideas. Strategy specifics stay proprietary.',
+    skills: [
+      'Hypothesis pre-registration',
+      'Walk-forward validation',
+      'Permutation and bootstrap testing',
+      'Multi-asset backtesting',
+      'Multiple-testing correction',
+    ],
+    readTime: 'Independent research · methodology overview',
+    url: '#',
+    status: 'in-progress',
   },
   {
     id: 'varsity',

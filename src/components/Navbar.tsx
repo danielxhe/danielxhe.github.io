@@ -10,9 +10,10 @@ const navLinks = [
 ];
 
 const deepDiveLinks = [
-  { label: 'StemboostTutor — Case Study', hash: 'stemboost' },
+  { label: 'Quant Research: Methodology', hash: 'quant' },
   { label: 'Varsity Tutors — Teardown', hash: 'varsity' },
   { label: 'Zoe — Scientific Teardown', hash: 'zoe' },
+  { label: 'Partiful Potluck Extension', hash: 'event-planner' },
 ];
 
 export function Navbar({ activeSection }: { activeSection: string }) {
