@@ -7,7 +7,7 @@ const events = [
   { year: '2021', label: 'Clinical Technician', sub: 'Costco Optical', icon: '👓' },
   { year: '2022', label: 'Stony Brook University', sub: 'Biochemistry, B.S.', icon: '📓' },
   { year: '2024', label: 'Cancer Researcher', sub: 'Ojima Research Group', icon: '🧪' },
-  { year: '2026', label: 'Quantitative Researcher', sub: '19V Research', icon: '📈' },
+  { year: '2026', label: 'Quantitative Researcher', sub: 'Stealth Startup', icon: '📈' },
   { year: '2026', label: 'Graduating', sub: 'Magna Cum Laude', icon: '🎓' },
 ];
 

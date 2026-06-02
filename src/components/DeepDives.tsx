@@ -28,7 +28,7 @@ const deepDives: DeepDive[] = [
     kind: 'Case Study',
     title: 'Spread: A Partiful Companion for Potlucks',
     tldr:
-      'Partiful handles RSVPs but leaves potluck coordination to text threads and shared docs. Spread is the companion app that closes that gap. This case study walks through identifying the gap, scoping a Next.js + Notion build, and shipping V1.1 Category Balance: a servings-based dot board that scales per-category targets to live RSVP headcount (Yes plus plus-ones plus half of Maybes), with host overrides surfaced as pills. Covers the locked stack, a PRD with success metrics and a decisions log, the Phase 1 manual-stub to V2.1 Claude-API roadmap for the AI dish suggester (built to ship product value first and earn eval data before swapping in the LLM), and surprise-event semantics baked in for the 2026-06-06 dogfood launch. Real artifacts: SPEC.md, PRD-V1.1-category-balance, 5 Notion databases, 13 typed API routes, host dashboard with category targets panel, and guest event page.',
+      'Partiful handles RSVPs but leaves potluck coordination to text threads and shared docs. Spread is the companion app that closes that gap. This case study walks through identifying the gap, scoping a Next.js + Notion build, and shipping V1.1 Category Balance: a servings-based dot board that scales per-category targets to live RSVP headcount (Yes plus plus-ones plus half of Maybes), with host overrides surfaced as pills. Covers the locked stack, a PRD with success metrics and a decisions log, the Phase 1 manual-stub to V2.1 Claude-API roadmap for the AI dish suggester (built to ship product value first and earn eval data before swapping in the LLM), and surprise-event semantics baked in for the 2026-06-06 launch. Real artifacts: SPEC, PRD V1.1, 5 Notion databases, 13 typed API routes, host dashboard with category targets panel, and guest event page.',
     skills: [
       'Identifying product gaps',
       'PRD writing with success metrics',
@@ -37,17 +37,17 @@ const deepDives: DeepDive[] = [
       'API and data model design',
     ],
     readTime: 'Independent project · V1.1 case study',
-    url: '#',
-    status: 'in-progress',
+    url: 'https://docs.google.com/document/d/1C6Ol0CP15m7fdr7in6yHyaAsAey6KSGx/edit?usp=sharing&ouid=117838647202165509558&rtpof=true&sd=true',
+    status: 'live',
     artifacts: [
       {
-        label: 'V2 Spec (coming soon)',
-        url: '#',
+        label: 'V2 Spec',
+        url: 'https://docs.google.com/document/d/1SHE6zVt3G9PgeqWLvwWuicQvxrMlC7nh/edit?usp=sharing&ouid=117838647202165509558&rtpof=true&sd=true',
         kind: 'doc',
       },
       {
-        label: 'PRD V1.1: Category Balance (coming soon)',
-        url: '#',
+        label: 'PRD V1.1: Category Balance',
+        url: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:018c72aa-54cf-414f-88e2-a9b10e4b39fb',
         kind: 'doc',
       },
       {

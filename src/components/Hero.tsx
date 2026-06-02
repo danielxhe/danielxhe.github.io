@@ -74,38 +74,31 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}>
               <motion.div animate={{ y: [0, -6, 0] }} transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
-                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Strategies Tested</p>
-                <p className="font-display text-2xl font-bold text-accent">62</p>
+                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Hudson Yards</p>
+                <p className="font-display text-2xl font-bold text-accent">Led team of 4</p>
+                <p className="font-body text-[10px] text-gray-400">144K SF tower</p>
               </motion.div>
             </motion.div>
             <motion.div
-              className="absolute bottom-8 left-0 bg-white rounded-xl shadow-md border border-warm-100 px-4 py-3"
+              className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-4 bg-white rounded-xl shadow-md border border-warm-100 px-4 py-3"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.9, ease: 'easeOut' }}>
-              <motion.div animate={{ y: [0, 6, 0] }} transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
-                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Views</p>
-                <p className="font-display text-2xl font-bold text-accent">100M+</p>
-              </motion.div>
-            </motion.div>
-            <motion.div
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl shadow-md border border-warm-100 px-4 py-3"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1.2, ease: 'easeOut' }}>
               <motion.div animate={{ y: [0, -4, 0] }} transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
-                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Brand Deals</p>
-                <p className="font-display text-2xl font-bold text-accent">$15K+</p>
+                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Math Ghost</p>
+                <p className="font-display text-2xl font-bold text-accent">1.2M</p>
+                <p className="font-body text-[10px] text-gray-400">followers · 100M views</p>
               </motion.div>
             </motion.div>
             <motion.div
               className="absolute bottom-0 right-4 bg-white rounded-xl shadow-md border border-warm-100 px-4 py-3"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1.5, ease: 'easeOut' }}>
+              transition={{ duration: 0.5, delay: 1.2, ease: 'easeOut' }}>
               <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
-                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Hudson Yards</p>
-                <p className="font-display text-2xl font-bold text-accent">144K SF</p>
+                <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Spread</p>
+                <p className="font-display text-2xl font-bold text-accent">5-day ship</p>
+                <p className="font-body text-[10px] text-gray-400">V1.1 · user interview</p>
               </motion.div>
             </motion.div>
           </div>

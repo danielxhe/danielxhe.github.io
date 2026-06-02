@@ -109,7 +109,7 @@ const projects: ProjectData[] = [
   title: 'Quantitative Research: Multi-Asset Systematic Strategy',
   anchorMetric: '62 catalogued · 94% kill rate',
   description:
-  'Built a multi-asset quantitative research pipeline at 19V Research across futures and commodities. Catalogued 62 signal-to-futures strategies and ran the full validation stack on every finalist, killing 94% under pre-registered criteria. Engineered the underlying Python pipeline (Pandas, NumPy, SciPy) and integrated five external data sources end to end.',
+  'Built a multi-asset quantitative research pipeline at a stealth startup, across futures and commodities. Catalogued 62 signal-to-futures strategies and ran the full validation stack on every finalist, killing 94% under pre-registered criteria. Engineered the underlying Python pipeline (Pandas, NumPy, SciPy) and integrated five external data sources end to end.',
   metrics: [
   '62 strategies catalogued',
   '94% kill rate',
