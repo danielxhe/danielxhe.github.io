@@ -45,7 +45,7 @@ export function About() {
                 Biochemistry, B.S.
               </div>
               <div className="font-body text-sm text-accent font-semibold">
-                3.74 GPA · Magna Cum Laude
+                3.71 GPA · Magna Cum Laude
               </div>
               <div className="font-body text-xs text-gray-400">May 2026</div>
             </div>
@@ -74,7 +74,7 @@ export function About() {
                   Stony Brook University
                 </div>
                 <div className="font-body text-xs text-gray-500">
-                  Biochemistry, B.S. · 3.74 GPA · Magna Cum Laude · May 2026
+                  Biochemistry, B.S. · 3.71 GPA · Magna Cum Laude · May 2026
                 </div>
               </div>
             </div>
