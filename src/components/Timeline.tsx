@@ -2,10 +2,10 @@ import React, { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const events = [
+  { year: '2019', label: 'Project Management Intern', sub: 'Syska Hennessy', icon: '🏗️' },
   { year: '2020', label: 'Co-founder', sub: 'The Math Ghost', icon: '📱' },
   { year: '2021', label: 'Clinical Technician', sub: 'Costco Optical', icon: '👓' },
   { year: '2022', label: 'Stony Brook University', sub: 'Biochemistry, B.S.', icon: '📓' },
-  { year: '2023', label: 'Project Management Intern', sub: 'Syska Hennessy', icon: '🏗️' },
   { year: '2024', label: 'Cancer Researcher', sub: 'Ojima Research Group', icon: '🧪' },
   { year: '2026', label: 'Quantitative Researcher', sub: 'Stealth Startup', icon: '📈' },
   { year: '2026', label: 'Graduating', sub: 'Magna Cum Laude', icon: '🎓' },
