@@ -2,7 +2,7 @@
   <rect width="640" height="400" fill="#FFFFFF"/>
 
   <text x="40" y="46" font-size="22" font-weight="700" fill="#0F172A">Validation Stack</text>
-  <text x="40" y="68" font-size="13" fill="#64748B">standard robustness checks every pre-registered hypothesis runs through</text>
+  <text x="40" y="68" font-size="13" fill="#64748B">the 6-layer core, since grown into a 38-gate validation framework</text>
 
   <line x1="40" y1="84" x2="600" y2="84" stroke="#E2E8F0" stroke-width="1"/>
 

@@ -2,7 +2,7 @@
   <rect width="640" height="400" fill="#FFFFFF"/>
 
   <text x="40" y="46" font-size="22" font-weight="700" fill="#0F172A">Mechanism Catalog</text>
-  <text x="40" y="68" font-size="13" fill="#64748B">62 signal-to-futures hypotheses across five buckets</text>
+  <text x="40" y="68" font-size="13" fill="#64748B">the first 62 signal-to-futures hypotheses across five buckets</text>
 
   <line x1="40" y1="84" x2="600" y2="84" stroke="#E2E8F0" stroke-width="1"/>
 

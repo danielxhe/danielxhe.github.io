@@ -106,20 +106,21 @@ const projects: ProjectData[] = [
 
 },
 {
-  title: 'Quantitative Research: Multi-Asset Systematic Strategy',
-  anchorMetric: '62 catalogued · 94% kill rate',
+  title: 'Quantitative Research: Multi-Asset Strategy Platform',
+  anchorMetric: '100+ strategies vetted · 90%+ kill rate',
   description:
-  'Built a multi-asset quantitative research pipeline at a stealth startup, across futures and commodities. Catalogued 62 signal-to-futures strategies and ran the full validation stack on every finalist, killing 94% under pre-registered criteria. Engineered the underlying Python pipeline (Pandas, NumPy, SciPy) and integrated five external data sources end to end.',
+  'Built and ran a multi-asset quantitative research platform at a stealth startup, spanning futures, commodities, crypto, and prediction markets. Vetted 100+ strategies under pre-registered criteria, killing over 90%; the first strategy to clear the full validation stack is now tracked live. Grew the approval bar from a 6-step checklist to a 38-gate validation framework, consolidated 170+ datasets onto a governed data platform, and built AI research agents (Claude Code) that automate parts of the funnel.',
   metrics: [
-  '62 strategies catalogued',
-  '94% kill rate',
-  '5 data sources integrated'],
+  '100+ strategies vetted',
+  '90%+ kill rate',
+  '38 validation gates',
+  '170+ datasets'],
 
   illustration: <QuantSVG />,
   slides: [
   {
     title: 'Mechanism Catalog',
-    caption: 'Catalogued 62 real-world signal-to-futures hypotheses across five buckets: weather and crop conditions, energy disruptions, geopolitical event flow, macro positioning, and physical-commodity dislocations. Each idea is written up with mechanism, expected direction, asset, hold horizon, and data source. The catalogue is built before any data is loaded.',
+    caption: 'The funnel started with 62 catalogued signal-to-futures hypotheses across five buckets: weather and crop conditions, energy disruptions, geopolitical event flow, macro positioning, and physical-commodity dislocations. Each idea is written up with mechanism, expected direction, asset, hold horizon, and data source before any data is loaded. The catalog has since grown past 100 candidates spanning futures, commodities, crypto, and prediction markets.',
     image: quantCatalog
   },
   {
@@ -129,13 +130,17 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Validation Stack',
-    caption: 'Every pre-registered hypothesis runs through a stack of standard robustness checks: out-of-sample testing on held-out data, walk-forward cross-validation, permutation and bootstrap significance tests, correction for multiple testing across the strategy family, and stress under realistic execution costs. Most candidate strategies fail at one of these layers.',
+    caption: 'Every pre-registered hypothesis runs through a stack of standard robustness checks: out-of-sample testing on held-out data, walk-forward cross-validation, permutation and bootstrap significance tests, correction for multiple testing across the strategy family, and stress under realistic execution costs. This 6-layer core has since grown into a 38-gate framework that also covers data reality (was the signal even knowable at trade time?), era stability, portfolio fit, and live decay monitoring. Most candidate strategies fail at one of these layers.',
     image: quantValidation
   },
   {
     title: 'Hypothesis Outcomes',
-    caption: 'Of 62 catalogued hypotheses, about half clear mechanism review where the story has to tie back to a plausible economic channel. Of those, 17 advance to pre-registration and full backtesting. Most then fail at one validation layer or another. Common kill patterns include realized-disruption signals already priced into the futures, single-grid-point reanalysis that turns out to be noise rather than weather, and cumulative-event triggers that fire after spot news has already moved. The few that survive every layer become candidates for live capital.',
+    caption: 'The first cohort: of 62 catalogued hypotheses, 17 advanced to pre-registration and full backtesting, and exactly one survived every layer. That survivor is now tracked live against its backtest distribution. Common kill patterns include realized-disruption signals already priced into the futures, single-grid-point reanalysis that turns out to be noise rather than weather, and cumulative-event triggers that fire after spot news has already moved. Across the full funnel the kill rate stays above 90%, which is the point: the gates exist to remove placebos before they cost money.',
     image: quantOutcomes
+  },
+  {
+    title: 'Data Platform & AI Agents',
+    caption: '170+ datasets spanning 15+ years of market history live on a governed data platform (Python, AWS S3, GitHub CI) with automated guards against lookahead bias and data leakage, so every result traces back to versioned inputs. AI research agents built with Claude Code automate portfolio-fit screening and post-trade attribution, alongside a meta-agent that researches a domain, distills a quality framework, and authors new agents.'
   }],
 
 }];

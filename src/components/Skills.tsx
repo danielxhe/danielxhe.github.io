@@ -44,8 +44,8 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'Excel' },
       { name: 'Python (Pandas, NumPy, SciPy)', evidence: 'Quant research · full data pipeline, backtests, statistical tests' },
-      { name: 'Claude & GPT-4 Prompting', evidence: 'Deep-dive research & portfolio build' },
-      { name: 'API Integration', evidence: 'Quant research · 5 external data source integrations' },
+      { name: 'Claude Code · AI Agents', evidence: 'Quant research · agents for screening & attribution, plus a meta-agent that authors agents' },
+      { name: 'API Integration', evidence: 'Quant research · 8+ external data source integrations' },
     ],
   },
 ];

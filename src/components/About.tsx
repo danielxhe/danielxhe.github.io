@@ -60,7 +60,8 @@ export function About() {
               on a 144,000 SF mixed-use tower in Hudson Yards, co-founded a TikTok
               brand that scaled to 1.2M followers and 100M+ views, and now work as a
               quantitative researcher at a stealth startup, where I own the
-              research-rigor and risk-management pillar across futures and commodities.
+              research-rigor and risk-management pillar across futures, commodities,
+              crypto, and prediction markets.
             </p>
             <p className="mt-4 font-body text-gray-700 text-base md:text-lg leading-relaxed font-medium">
               Targeting product management and consulting roles where I can bring
