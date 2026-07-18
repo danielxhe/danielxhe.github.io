@@ -50,7 +50,9 @@
 
   <line x1="40" y1="296" x2="600" y2="296" stroke="#E2E8F0" stroke-width="1"/>
 
-  <text x="40" y="330" font-size="11" fill="#64748B">total</text>
+  <text x="40" y="330" font-size="11" fill="#64748B">first cohort</text>
   <text x="40" y="368" font-size="32" font-weight="700" fill="#0F172A">62 hypotheses</text>
-  <text x="600" y="368" font-size="11" fill="#64748B" text-anchor="end">each catalogued before any data is loaded</text>
+  <text x="600" y="326" font-size="10" fill="#94A3B8" text-anchor="end">each catalogued before any data is loaded</text>
+  <text x="600" y="348" font-size="13" font-weight="600" fill="#2563EB" text-anchor="end">catalog since grown past 100 candidates</text>
+  <text x="600" y="366" font-size="10" fill="#64748B" text-anchor="end">futures, commodities, crypto, and prediction markets</text>
 </svg>

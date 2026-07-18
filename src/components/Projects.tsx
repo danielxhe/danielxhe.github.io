@@ -20,6 +20,7 @@ import quantCatalog from '../assets/quant_catalog.svg';
 import quantPrereg from '../assets/quant_prereg.svg';
 import quantValidation from '../assets/quant_validation.svg';
 import quantOutcomes from '../assets/quant_outcomes.svg';
+import quantPlatform from '../assets/quant_platform.svg';
 interface SlideData {
   title: string;
   caption: string;
@@ -140,7 +141,8 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Data Platform & AI Agents',
-    caption: '170+ datasets spanning 15+ years of market history live on a governed data platform (Python, AWS S3, GitHub CI) with automated guards against lookahead bias and data leakage, so every result traces back to versioned inputs. AI research agents built with Claude Code automate portfolio-fit screening and post-trade attribution, alongside a meta-agent that researches a domain, distills a quality framework, and authors new agents.'
+    caption: '170+ datasets spanning 15+ years of market history live on a governed data platform (Python, AWS S3, GitHub CI) with automated guards against lookahead bias and data leakage, so every result traces back to versioned inputs. AI research agents built with Claude Code automate portfolio-fit screening and post-trade attribution, alongside a meta-agent that researches a domain, distills a quality framework, and authors new agents.',
+    image: quantPlatform
   }],
 
 }];

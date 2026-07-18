@@ -2,7 +2,7 @@
   <rect width="640" height="400" fill="#FFFFFF"/>
 
   <text x="40" y="46" font-size="22" font-weight="700" fill="#0F172A">Validation Stack</text>
-  <text x="40" y="68" font-size="13" fill="#64748B">the 6-layer core, since grown into a 38-gate validation framework</text>
+  <text x="40" y="68" font-size="13" fill="#64748B">38 gates across six phases, grown from the original 6-layer core</text>
 
   <line x1="40" y1="84" x2="600" y2="84" stroke="#E2E8F0" stroke-width="1"/>
 
@@ -10,51 +10,51 @@
     <rect x="40" y="106" width="186" height="120" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
     <rect x="40" y="106" width="4" height="120" fill="#2563EB"/>
     <text x="60" y="132" font-size="11" font-weight="700" fill="#2563EB">1</text>
-    <text x="60" y="156" font-size="13" font-weight="700" fill="#0F172A">Out-of-Sample</text>
-    <text x="60" y="172" font-size="13" font-weight="700" fill="#0F172A">Testing</text>
-    <text x="60" y="194" font-size="10" fill="#64748B">evaluate on held-out data,</text>
-    <text x="60" y="208" font-size="10" fill="#64748B">never used for fitting</text>
+    <text x="60" y="156" font-size="13" font-weight="700" fill="#0F172A">Data Reality</text>
+    <text x="60" y="172" font-size="13" font-weight="700" fill="#0F172A">Pre-Flight</text>
+    <text x="60" y="194" font-size="10" fill="#64748B">was the signal knowable,</text>
+    <text x="60" y="208" font-size="10" fill="#64748B">holdable, fillable at trade time?</text>
 
     <rect x="236" y="106" width="186" height="120" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
     <rect x="236" y="106" width="4" height="120" fill="#2563EB"/>
     <text x="256" y="132" font-size="11" font-weight="700" fill="#2563EB">2</text>
-    <text x="256" y="156" font-size="13" font-weight="700" fill="#0F172A">Walk-Forward</text>
-    <text x="256" y="172" font-size="13" font-weight="700" fill="#0F172A">Cross-Validation</text>
-    <text x="256" y="194" font-size="10" fill="#64748B">rolling train and test folds</text>
-    <text x="256" y="208" font-size="10" fill="#64748B">across time</text>
+    <text x="256" y="156" font-size="13" font-weight="700" fill="#0F172A">Statistical</text>
+    <text x="256" y="172" font-size="13" font-weight="700" fill="#0F172A">Fingerprint</text>
+    <text x="256" y="194" font-size="10" fill="#64748B">permutation, bootstrap, and</text>
+    <text x="256" y="208" font-size="10" fill="#64748B">random-entry null tests</text>
 
     <rect x="432" y="106" width="186" height="120" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
     <rect x="432" y="106" width="4" height="120" fill="#2563EB"/>
     <text x="452" y="132" font-size="11" font-weight="700" fill="#2563EB">3</text>
-    <text x="452" y="156" font-size="13" font-weight="700" fill="#0F172A">Permutation</text>
-    <text x="452" y="172" font-size="13" font-weight="700" fill="#0F172A">Tests</text>
-    <text x="452" y="194" font-size="10" fill="#64748B">compare observed return</text>
-    <text x="452" y="208" font-size="10" fill="#64748B">to a shuffled null</text>
+    <text x="452" y="156" font-size="13" font-weight="700" fill="#0F172A">Walk-Forward</text>
+    <text x="452" y="172" font-size="13" font-weight="700" fill="#0F172A">&amp; Hold-Out</text>
+    <text x="452" y="194" font-size="10" fill="#64748B">rolling out-of-sample folds</text>
+    <text x="452" y="208" font-size="10" fill="#64748B">plus sealed hold-out data</text>
 
     <rect x="40" y="240" width="186" height="120" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
     <rect x="40" y="240" width="4" height="120" fill="#2563EB"/>
     <text x="60" y="266" font-size="11" font-weight="700" fill="#2563EB">4</text>
-    <text x="60" y="290" font-size="13" font-weight="700" fill="#0F172A">Bootstrap</text>
-    <text x="60" y="306" font-size="13" font-weight="700" fill="#0F172A">Confidence</text>
-    <text x="60" y="328" font-size="10" fill="#64748B">resample trades to bound</text>
-    <text x="60" y="342" font-size="10" fill="#64748B">the Sharpe with 95% CI</text>
+    <text x="60" y="290" font-size="13" font-weight="700" fill="#0F172A">Era</text>
+    <text x="60" y="306" font-size="13" font-weight="700" fill="#0F172A">Stability</text>
+    <text x="60" y="328" font-size="10" fill="#64748B">the edge must repeat across</text>
+    <text x="60" y="342" font-size="10" fill="#64748B">years, not ride one lucky era</text>
 
     <rect x="236" y="240" width="186" height="120" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
     <rect x="236" y="240" width="4" height="120" fill="#2563EB"/>
     <text x="256" y="266" font-size="11" font-weight="700" fill="#2563EB">5</text>
-    <text x="256" y="290" font-size="13" font-weight="700" fill="#0F172A">Multiple-Testing</text>
-    <text x="256" y="306" font-size="13" font-weight="700" fill="#0F172A">Correction</text>
-    <text x="256" y="328" font-size="10" fill="#64748B">adjust significance for the</text>
-    <text x="256" y="342" font-size="10" fill="#64748B">size of the strategy family</text>
+    <text x="256" y="290" font-size="13" font-weight="700" fill="#0F172A">Anti-Data-</text>
+    <text x="256" y="306" font-size="13" font-weight="700" fill="#0F172A">Mining</text>
+    <text x="256" y="328" font-size="10" fill="#64748B">multiple-testing correction and</text>
+    <text x="256" y="342" font-size="10" fill="#64748B">selection-bias checks</text>
 
     <rect x="432" y="240" width="186" height="120" rx="6" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
     <rect x="432" y="240" width="4" height="120" fill="#2563EB"/>
     <text x="452" y="266" font-size="11" font-weight="700" fill="#2563EB">6</text>
-    <text x="452" y="290" font-size="13" font-weight="700" fill="#0F172A">Cost &amp; Slippage</text>
-    <text x="452" y="306" font-size="13" font-weight="700" fill="#0F172A">Stress</text>
-    <text x="452" y="328" font-size="10" fill="#64748B">verify the edge survives</text>
-    <text x="452" y="342" font-size="10" fill="#64748B">realistic execution costs</text>
+    <text x="452" y="290" font-size="13" font-weight="700" fill="#0F172A">Costs, Fit</text>
+    <text x="452" y="306" font-size="13" font-weight="700" fill="#0F172A">&amp; Decay</text>
+    <text x="452" y="328" font-size="10" fill="#64748B">realistic execution costs, book</text>
+    <text x="452" y="342" font-size="10" fill="#64748B">fit, live decay monitoring</text>
   </g>
 
-  <text x="320" y="386" font-size="11" fill="#64748B" text-anchor="middle">most candidate strategies fail at one of these layers</text>
+  <text x="320" y="386" font-size="11" fill="#64748B" text-anchor="middle">the first strategy to clear all 38 gates is now tracked live against its backtest distribution</text>
 </svg>
