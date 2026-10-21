@@ -110,7 +110,7 @@ const projects: ProjectData[] = [
   title: 'Quantitative Research: Multi-Asset Strategy Platform',
   anchorMetric: '100+ strategies vetted · 90%+ kill rate',
   description:
-  'Built and ran a multi-asset quantitative research platform at a stealth startup, spanning futures, commodities, crypto, and prediction markets. Vetted 100+ strategies under pre-registered criteria, killing over 90%; the first strategy to clear the full validation stack is now tracked live. Grew the approval bar from a 6-step checklist to a 38-gate validation framework, consolidated 170+ datasets onto a governed data platform, and built AI research agents (Claude Code) that automate parts of the funnel.',
+  'Built and ran a multi-asset quantitative research platform at 19V Capital, spanning futures, commodities, crypto, and prediction markets. Vetted 100+ strategies under pre-registered criteria, killing over 90%; the first strategy to clear the full validation stack is now tracked live. Grew the approval bar from a 6-step checklist to a 38-gate validation framework, consolidated 170+ datasets onto a governed data platform, and built AI research agents (Claude Code) that automate parts of the funnel.',
   metrics: [
   '100+ strategies vetted',
   '90%+ kill rate',

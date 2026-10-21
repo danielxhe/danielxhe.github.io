@@ -56,8 +56,8 @@ const deepDives: DeepDive[] = [
         kind: 'repo',
       },
       {
-        label: 'Live app (coming soon)',
-        url: '#',
+        label: 'Live app',
+        url: 'https://dh-event-planner.vercel.app/',
         kind: 'app',
       },
     ],
