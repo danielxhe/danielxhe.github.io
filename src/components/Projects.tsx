@@ -72,6 +72,46 @@ const projects: ProjectData[] = [
   }
 },
 {
+  title: 'Quantitative Research: Multi-Asset Strategy Platform',
+  anchorMetric: '100+ strategies vetted · 90%+ kill rate',
+  description:
+  'Built and ran a multi-asset quantitative research platform at 19V Capital, spanning futures, commodities, crypto, and prediction markets. Vetted 100+ strategies under pre-registered criteria, killing over 90%; the first strategy to clear the full validation stack is now tracked live. Grew the approval bar from a 6-step checklist to a 38-gate validation framework, consolidated 170+ datasets onto a governed data platform, and built AI research agents (Claude Code) that automate parts of the funnel.',
+  metrics: [
+  '100+ strategies vetted',
+  '90%+ kill rate',
+  '38 validation gates',
+  '170+ datasets'],
+
+  illustration: <QuantSVG />,
+  slides: [
+  {
+    title: 'Mechanism Catalog',
+    caption: 'The funnel started with 62 catalogued signal-to-futures hypotheses across five buckets: weather and crop conditions, energy disruptions, geopolitical event flow, macro positioning, and physical-commodity dislocations. Each idea is written up with mechanism, expected direction, asset, hold horizon, and data source before any data is loaded. The catalog has since grown past 100 candidates spanning futures, commodities, crypto, and prediction markets.',
+    image: quantCatalog
+  },
+  {
+    title: 'Pre-Registration',
+    caption: 'Every strategy is committed to writing before data is touched. The spec covers signal definition, parameter ranges, asset, entry rule, hold window, and kill criteria. This catches the most common quant failure mode: letting the data choose the rules retroactively.',
+    image: quantPrereg
+  },
+  {
+    title: 'Validation Stack',
+    caption: 'Every pre-registered hypothesis runs through a stack of standard robustness checks: out-of-sample testing on held-out data, walk-forward cross-validation, permutation and bootstrap significance tests, correction for multiple testing across the strategy family, and stress under realistic execution costs. This 6-layer core has since grown into a 38-gate framework that also covers data reality (was the signal even knowable at trade time?), era stability, portfolio fit, and live decay monitoring. Most candidate strategies fail at one of these layers.',
+    image: quantValidation
+  },
+  {
+    title: 'Hypothesis Outcomes',
+    caption: 'The first cohort: of 62 catalogued hypotheses, 17 advanced to pre-registration and full backtesting, and exactly one survived every layer. That survivor is now tracked live against its backtest distribution. Common kill patterns include realized-disruption signals already priced into the futures, single-grid-point reanalysis that turns out to be noise rather than weather, and cumulative-event triggers that fire after spot news has already moved. Across the full funnel the kill rate stays above 90%, which is the point: the gates exist to remove placebos before they cost money.',
+    image: quantOutcomes
+  },
+  {
+    title: 'Data Platform & AI Agents',
+    caption: '170+ datasets spanning 15+ years of market history live on a governed data platform (Python, AWS S3, GitHub CI) with automated guards against lookahead bias and data leakage, so every result traces back to versioned inputs. AI research agents built with Claude Code automate portfolio-fit screening and post-trade attribution, alongside a meta-agent that researches a domain, distills a quality framework, and authors new agents.',
+    image: quantPlatform
+  }],
+
+},
+{
   title: 'Hudson Yards: Ground Floor Space Programming',
   anchorMetric: '144,000 SF · 4-person team',
   description:
@@ -135,46 +175,6 @@ const projects: ProjectData[] = [
     title: 'Traffic Source Breakdown',
     caption: '83.3% of views came from the For You page, meaning growth was driven by algorithmic placement, not existing followers. Optimized hook structure, video length, and cadence to maximize reach. One video alone generated 1.2M views, 3,224 hours of watch time, and 411 new followers.',
     image: tiktokTraffic
-  }],
-
-},
-{
-  title: 'Quantitative Research: Multi-Asset Strategy Platform',
-  anchorMetric: '100+ strategies vetted · 90%+ kill rate',
-  description:
-  'Built and ran a multi-asset quantitative research platform at 19V Capital, spanning futures, commodities, crypto, and prediction markets. Vetted 100+ strategies under pre-registered criteria, killing over 90%; the first strategy to clear the full validation stack is now tracked live. Grew the approval bar from a 6-step checklist to a 38-gate validation framework, consolidated 170+ datasets onto a governed data platform, and built AI research agents (Claude Code) that automate parts of the funnel.',
-  metrics: [
-  '100+ strategies vetted',
-  '90%+ kill rate',
-  '38 validation gates',
-  '170+ datasets'],
-
-  illustration: <QuantSVG />,
-  slides: [
-  {
-    title: 'Mechanism Catalog',
-    caption: 'The funnel started with 62 catalogued signal-to-futures hypotheses across five buckets: weather and crop conditions, energy disruptions, geopolitical event flow, macro positioning, and physical-commodity dislocations. Each idea is written up with mechanism, expected direction, asset, hold horizon, and data source before any data is loaded. The catalog has since grown past 100 candidates spanning futures, commodities, crypto, and prediction markets.',
-    image: quantCatalog
-  },
-  {
-    title: 'Pre-Registration',
-    caption: 'Every strategy is committed to writing before data is touched. The spec covers signal definition, parameter ranges, asset, entry rule, hold window, and kill criteria. This catches the most common quant failure mode: letting the data choose the rules retroactively.',
-    image: quantPrereg
-  },
-  {
-    title: 'Validation Stack',
-    caption: 'Every pre-registered hypothesis runs through a stack of standard robustness checks: out-of-sample testing on held-out data, walk-forward cross-validation, permutation and bootstrap significance tests, correction for multiple testing across the strategy family, and stress under realistic execution costs. This 6-layer core has since grown into a 38-gate framework that also covers data reality (was the signal even knowable at trade time?), era stability, portfolio fit, and live decay monitoring. Most candidate strategies fail at one of these layers.',
-    image: quantValidation
-  },
-  {
-    title: 'Hypothesis Outcomes',
-    caption: 'The first cohort: of 62 catalogued hypotheses, 17 advanced to pre-registration and full backtesting, and exactly one survived every layer. That survivor is now tracked live against its backtest distribution. Common kill patterns include realized-disruption signals already priced into the futures, single-grid-point reanalysis that turns out to be noise rather than weather, and cumulative-event triggers that fire after spot news has already moved. Across the full funnel the kill rate stays above 90%, which is the point: the gates exist to remove placebos before they cost money.',
-    image: quantOutcomes
-  },
-  {
-    title: 'Data Platform & AI Agents',
-    caption: '170+ datasets spanning 15+ years of market history live on a governed data platform (Python, AWS S3, GitHub CI) with automated guards against lookahead bias and data leakage, so every result traces back to versioned inputs. AI research agents built with Claude Code automate portfolio-fit screening and post-trade attribution, alongside a meta-agent that researches a domain, distills a quality framework, and authors new agents.',
-    image: quantPlatform
   }],
 
 }];
@@ -617,13 +617,13 @@ function SlidePlaceholder({
             </div>
           )}
           <div
-            className="flex-1 bg-warm-50 flex items-center justify-center p-4 cursor-zoom-in relative group"
+            className="h-56 sm:h-80 bg-warm-50 flex items-center justify-center p-4 cursor-zoom-in relative group"
             onClick={() => setLightboxOpen(true)}>
             {!imgLoaded && <div className="absolute inset-4 rounded-lg skeleton" />}
             <img
               src={slide.image}
               alt={slide.title}
-              className="max-w-full max-h-72 object-contain rounded-lg shadow-sm transition-all duration-300 group-hover:scale-[1.02]"
+              className="max-w-full max-h-full object-contain rounded-lg shadow-sm transition-all duration-300 group-hover:scale-[1.02]"
               style={{ opacity: imgLoaded ? 1 : 0, transition: 'opacity 0.4s ease, transform 0.2s ease' }}
               onLoad={() => setImgLoaded(true)}
             />
@@ -631,7 +631,7 @@ function SlidePlaceholder({
               <span className="bg-black/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full">Click to expand</span>
             </div>
           </div>
-          <div className="px-6 py-4 bg-white border-t border-warm-100">
+          <div className="px-4 py-3 sm:px-6 sm:py-4 bg-white border-t border-warm-100">
             <p className="font-display text-lg font-bold text-gray-800">{slide.title}</p>
             <p className="mt-1 font-body text-sm text-gray-500">{slide.caption}</p>
           </div>
@@ -676,7 +676,7 @@ function SlideCarousel({ slides }: {slides: SlideData[];}) {
   const next = () => goTo(current === slides.length - 1 ? 0 : current + 1);
   const variants = {
     enter: (dir: number) => ({
-      x: dir > 0 ? 400 : -400,
+      x: dir > 0 ? '30%' : '-30%',
       opacity: 0
     }),
     center: {
@@ -684,7 +684,7 @@ function SlideCarousel({ slides }: {slides: SlideData[];}) {
       opacity: 1
     },
     exit: (dir: number) => ({
-      x: dir > 0 ? -400 : 400,
+      x: dir > 0 ? '-30%' : '30%',
       opacity: 0
     })
   };
@@ -699,11 +699,15 @@ function SlideCarousel({ slides }: {slides: SlideData[];}) {
             initial="enter"
             animate="center"
             exit="exit"
-            transition={{
-              type: 'spring',
-              stiffness: 280,
-              damping: 28
-            }}>
+            transition={{ duration: 0.22, ease: 'easeOut' }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.2}
+            onDragEnd={(_, info) => {
+              if (info.offset.x < -50) next();
+              else if (info.offset.x > 50) prev();
+            }}
+            style={{ touchAction: 'pan-y' }}>
             
             <SlidePlaceholder slide={slides[current]} index={current} />
           </motion.div>
@@ -843,50 +847,16 @@ export function Projects() {
   });
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const handleSelect = (index: number) => {
-    setSelectedIndex(selectedIndex === index ? null : index);
+    const opening = selectedIndex !== index;
+    setSelectedIndex(opening ? index : null);
+    // On phones, keep the tapped card at the top so closing another panel above it doesn't push it off screen
+    if (opening && window.innerWidth < 640) {
+      setTimeout(() => document.getElementById(`project-${index}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+    }
   };
   const selectedProject =
   selectedIndex !== null ? projects[selectedIndex] : null;
 
-  const ExpansionPanel = ({ forIndex }: { forIndex: number }) => {
-    if (selectedIndex !== forIndex || !selectedProject) return null;
-    return (
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={selectedIndex}
-          initial={{ height: 0, opacity: 0 }}
-          animate={{ height: 'auto', opacity: 1 }}
-          exit={{ height: 0, opacity: 0 }}
-          transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-          className="overflow-hidden col-span-1 md:col-span-2 lg:col-span-3">
-          <div className="bg-white rounded-xl border border-warm-100 shadow-md mt-2">
-            <div className="p-6 md:p-8">
-              <div className="flex items-center justify-between mb-4">
-                <div>
-                  <p className="font-body text-xs font-semibold text-accent uppercase tracking-wider">
-                    Project Details
-                  </p>
-                  <h3 className="font-display text-xl md:text-2xl font-bold text-gray-900 mt-1">
-                    {selectedProject.title}
-                  </h3>
-                </div>
-                <button
-                  onClick={() => setSelectedIndex(null)}
-                  className="p-2 rounded-full text-gray-400 hover:text-gray-600 hover:bg-warm-50 transition-colors"
-                  aria-label="Close details">
-                  ✕
-                </button>
-              </div>
-              <p className="font-body text-gray-600 text-sm md:text-base leading-relaxed mb-6">
-                {selectedProject.description}
-              </p>
-              <SlideCarousel slides={selectedProject.slides} />
-            </div>
-          </div>
-        </motion.div>
-      </AnimatePresence>
-    );
-  };
 
   return (
     <section id="projects" className="w-full bg-warm-50 py-20 md:py-24">
@@ -909,16 +879,31 @@ export function Projects() {
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch">
           {projects.map((project, i) => (
             <React.Fragment key={project.title}>
-              <div className="flex flex-col">
+              <div id={`project-${i}`} className="flex flex-col" style={{ scrollMarginTop: 64 }}>
                 <ProjectCard
                   project={project}
                   index={i}
                   isSelected={selectedIndex === i}
                   onSelect={() => handleSelect(i)} />
-                {/* On single column (mobile) expand inline */}
-                <div className="sm:hidden col-span-1">
-                  <ExpansionPanel forIndex={i} />
+                {/* On single column (mobile) expand inline, no height animation so the page doesn't jump */}
+                {selectedIndex === i &&
+                <div className="sm:hidden mt-2 bg-white rounded-xl border border-warm-100 shadow-md">
+                  <div className="p-4">
+                    <div className="flex items-start justify-between gap-3 mb-3">
+                      <p className="font-body text-sm text-gray-600 leading-relaxed">
+                        {project.description}
+                      </p>
+                      <button
+                        onClick={() => setSelectedIndex(null)}
+                        className="flex-shrink-0 p-2 -mr-2 -mt-2 rounded-full text-gray-400 hover:text-gray-600"
+                        aria-label="Close details">
+                        ✕
+                      </button>
+                    </div>
+                    <SlideCarousel slides={project.slides} />
+                  </div>
                 </div>
+                }
               </div>
             </React.Fragment>
           ))}
