@@ -36,9 +36,9 @@ const deepDives: DeepDive[] = [
       'Data quality auditing',
       'Shipping fast on feedback',
     ],
-    readTime: 'Founder project · case study in progress',
-    url: '#',
-    status: 'in-progress',
+    readTime: 'Founder project · ~2 min skim, ~6 min full read',
+    url: 'https://docs.google.com/document/d/1jqXUvSWkEB4g_Hjql_-jg7klyJ2onSScs-x4pfKnKII/export?format=pdf',
+    status: 'live',
     artifacts: [
       {
         label: 'Live app',
