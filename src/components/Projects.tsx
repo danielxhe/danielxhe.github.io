@@ -48,7 +48,7 @@ const projects: ProjectData[] = [
   description:
   'Founded and shipped a free platform for pre-nursing students that checks their classes against 1,500+ prerequisite rules covering 250+ programs. Validated the market gap through competitor research, prioritized the roadmap from 400+ users, 35 user state requests, and tester feedback, and ran an independent QA audit that verified 98.1% of quoted requirements word for word against official school pages.',
   metrics: [
-  '~90% finish (40% target)',
+  '~90% finish in v1 demo (40% target)',
   '35 state requests',
   '40+ changes in 48 hours',
   '98.1% quotes verified'],
@@ -62,7 +62,7 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Built Around Real Users',
-    caption: 'Defined KPIs up front and built an analytics dashboard to track them: about 90% of users finish the class check against a 40% target. Tester feedback and 35 user state requests drove 40+ changes within 48 hours, including distance search, NCLEX filters, retake limits, and a best-match list. Shown: the dashboard for the current version; users from the v1 launch are archived separately and included in the 400+ total.',
+    caption: 'Defined KPIs up front and built an analytics dashboard to track them: about 90% of users in the targeted v1 demo launch finished the class check against a 40% target. Tester feedback and 35 user state requests drove 40+ changes within 48 hours, including distance search, NCLEX filters, retake limits, and a best-match list. Shown: the dashboard for the current public version, where traffic is broader than the targeted v1 demo; v1 users are archived separately and included in the 400+ total.',
     image: trackrxDashboard
   }],
 

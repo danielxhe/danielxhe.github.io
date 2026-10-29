@@ -19,7 +19,7 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'MVP Scoping', evidence: 'TrackRx · launched with one state, expanded on user requests' },
       { name: 'Product Roadmap', evidence: 'TrackRx · prioritized from 400+ users and 35 state requests' },
-      { name: 'KPI Definition', evidence: 'TrackRx · ~90% class-check completion vs a 40% target' },
+      { name: 'KPI Definition', evidence: 'TrackRx · ~90% class-check completion in v1 demo vs a 40% target' },
       { name: 'Product Analytics', evidence: 'TrackRx · built the analytics dashboard' },
       { name: 'Market Research', evidence: 'TrackRx · competitor research to validate the gap' },
       { name: 'User Interviews', evidence: 'TrackRx · tester feedback drove 40+ changes in 48 hours' },
