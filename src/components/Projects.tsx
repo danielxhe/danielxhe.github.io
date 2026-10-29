@@ -21,6 +21,8 @@ import quantPrereg from '../assets/quant_prereg.svg';
 import quantValidation from '../assets/quant_validation.svg';
 import quantOutcomes from '../assets/quant_outcomes.svg';
 import quantPlatform from '../assets/quant_platform.svg';
+import trackrxHome from '../assets/trackrx_home.png';
+import trackrxMobile from '../assets/trackrx_mobile.png';
 interface SlideData {
   title: string;
   caption: string;
@@ -41,7 +43,36 @@ interface ProjectData {
 }
 const projects: ProjectData[] = [
 {
-  title: 'Hudson Yards — Ground Floor Space Programming',
+  title: 'TrackRx: Nursing Prerequisite Matcher',
+  anchorMetric: '250+ programs · 1,500+ rules · 400+ users',
+  description:
+  'Founded and shipped a free platform for pre-nursing students that checks their classes against 1,500+ prerequisite rules covering 250+ programs. Validated the market gap through competitor research, prioritized the roadmap from 400+ users, 35 user state requests, and tester feedback, and ran an independent QA audit that verified 98.1% of quoted requirements word for word against official school pages.',
+  metrics: [
+  '~90% finish (40% target)',
+  '35 state requests',
+  '40+ changes in 48 hours',
+  '98.1% quotes verified'],
+
+  illustration: <TrackRxSVG />,
+  slides: [
+  {
+    title: 'Check Your Classes in Minutes',
+    caption: "Students answer one card per class, then see which programs they already qualify for, which are a few classes away, and exactly what is missing. Every requirement links back to the school's official prerequisite page so students can confirm it themselves. Free, no account needed.",
+    image: trackrxHome
+  },
+  {
+    title: 'Built Around Real Users',
+    caption: 'Defined KPIs up front and built an analytics dashboard to track them: about 90% of users finish the class check against a 40% target. Tester feedback and 35 user state requests drove 40+ changes within 48 hours, including distance search, NCLEX filters, retake limits, and a best-match list.',
+    image: trackrxMobile
+  }],
+
+  link: {
+    label: 'Live app: gettrackrx.com',
+    url: 'https://gettrackrx.com'
+  }
+},
+{
+  title: 'Hudson Yards: Ground Floor Space Programming',
   anchorMetric: '144,000 SF · 4-person team',
   description:
   'Owned ground-floor space allocation for a 144,000 SF mixed-use tower in Hudson Yards, balancing vendor, grocery, and MEP requirements across structural, architectural, and MEP disciplines. Delivered documentation 2-3 days ahead of biweekly QA deadlines over 5+ design development cycles.',
@@ -76,15 +107,16 @@ const projects: ProjectData[] = [
 
 },
 {
-  title: 'The Math Ghost — TikTok Growth & Monetization',
+  title: 'The Math Ghost: TikTok Growth & Monetization',
   anchorMetric: '1.2M followers · 100M+ views',
   description:
   'Co-founded a math education TikTok brand and engineered a data-driven content model using A/B testing and engagement analytics. Owned the full product lifecycle from content strategy to brand partnership pipeline.',
   metrics: [
   '200K → 1.2M followers',
   '100M+ views',
-  '8+ videos at 3M+ views',
-  '$15,000+ brand deals'],
+  '10+ videos at 3M+ views',
+  '50K+ avg views',
+  '$15,000 in brand deals'],
 
   illustration: <TikTokSVG />,
   slides: [
@@ -95,7 +127,7 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Inbound Brand Partnership',
-    caption: 'Example of inbound brand partnership outreach received at scale. Negotiated deliverable scope, format, and compensation structure with multiple companies including EdTech startup HiEmile. Part of $15,000+ in total brand deals closed across the channel lifetime.',
+    caption: 'Example of inbound brand partnership outreach received at scale. Negotiated deliverable scope, format, and compensation structure with multiple companies including EdTech startup HiEmile. Part of $15,000 in total brand deals closed across the channel lifetime.',
     image: tiktokBrandDeal,
     headerImage: partnerly
   },
@@ -148,6 +180,45 @@ const projects: ProjectData[] = [
 }];
 
 // --- SVG Illustrations ---
+function TrackRxSVG() {
+  // Checked classes on the left feed matched programs on the right.
+  const rows = [0, 1, 2, 3];
+  return (
+    <svg
+      viewBox="0 0 320 200"
+      className="w-full h-48 rounded-lg"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+
+      <rect width="320" height="200" rx="8" fill="#FFF7ED" />
+      <rect x="30" y="30" width="120" height="140" rx="8" fill="white" stroke="#F97316" strokeWidth="2" />
+      <text x="90" y="50" fontSize="9" fill="#EA580C" fontFamily="Nunito" textAnchor="middle" fontWeight="700">
+        My classes
+      </text>
+      {rows.map((i) => (
+        <g key={i}>
+          <rect x="42" y={62 + i * 24} width="12" height="12" rx="3" fill={i < 3 ? '#F97316' : 'white'} stroke="#F97316" strokeWidth="1.5" />
+          {i < 3 && <path d={`M45 ${68 + i * 24} l3 3 l5 -6`} stroke="white" strokeWidth="1.8" fill="none" />}
+          <rect x="62" y={65 + i * 24} width={70 - i * 8} height="6" rx="3" fill="#FDBA74" />
+        </g>
+      ))}
+      <line x1="158" y1="100" x2="182" y2="100" stroke="#F97316" strokeWidth="2" />
+      <polygon points="180,95 180,105 190,100" fill="#F97316" />
+      {[0, 1, 2].map((i) => (
+        <g key={i}>
+          <rect x="198" y={42 + i * 42} width="96" height="32" rx="6" fill="white" stroke={i === 0 ? '#F97316' : '#FDBA74'} strokeWidth="1.5" />
+          <rect x="208" y={55 + i * 42} width="40" height="5" rx="2.5" fill="#FED7AA" />
+          <text x="286" y={61 + i * 42} fontSize="8" fill="#EA580C" fontFamily="Nunito" textAnchor="end" fontWeight="700">
+            {i === 0 ? 'Ready' : `${i} class${i > 1 ? 'es' : ''} away`}
+          </text>
+        </g>
+      ))}
+      <text x="160" y="190" fontSize="8" fill="#9CA3AF" fontFamily="Nunito" textAnchor="middle">
+        250+ programs · 1,500+ rules
+      </text>
+    </svg>);
+
+}
 function FloorPlanSVG() {
   return (
     <svg
@@ -835,7 +906,7 @@ export function Projects() {
         </motion.div>
 
         {/* All screen sizes: inline expand below clicked card */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch">
           {projects.map((project, i) => (
             <React.Fragment key={project.title}>
               <div className="flex flex-col">

@@ -54,19 +54,12 @@ export function About() {
           {/* Right content */}
           <div className="flex-1">
             <p className="font-body text-gray-600 text-base md:text-lg leading-relaxed">
-              I graduated with a Bachelor's in Biochemistry at Stony Brook University
-              with hands-on experience across real estate project management, digital
-              product growth, and quantitative research. I led a 4-person intern team
-              on a 144,000 SF mixed-use tower in Hudson Yards, co-founded a TikTok
-              brand that scaled to 1.2M followers and 100M+ views, and now work as a
-              quantitative researcher at 19V Capital, where I own the
-              research-rigor and risk-management pillar across futures, commodities,
-              crypto, and prediction markets.
+              Biochem grad who builds things. I founded TrackRx (400+ users), do
+              quantitative research at 19V Capital, and co-founded a TikTok brand
+              that hit 1.2M followers.
             </p>
             <p className="mt-4 font-body text-gray-700 text-base md:text-lg leading-relaxed font-medium">
-              Targeting product management and consulting roles where I can bring
-              cross-functional coordination, structured problem solving, and a bias
-              toward measurable outcomes.
+              Targeting product management and consulting roles.
             </p>
             {/* Mobile education info */}
             <div className="md:hidden mt-6 flex items-center gap-3 px-4 py-3 bg-white rounded-lg border border-warm-100">

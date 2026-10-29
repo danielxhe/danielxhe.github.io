@@ -24,40 +24,25 @@ interface DeepDive {
 // NOTE: replace the url fields with the real Google Doc links.
 const deepDives: DeepDive[] = [
   {
-    id: 'event-planner',
+    id: 'trackrx',
     kind: 'Case Study',
-    title: 'Spread: A Partiful Companion for Potlucks',
+    title: 'TrackRx: Matching Pre-Nursing Students to Programs',
     tldr:
-      'Partiful handles RSVPs but leaves potluck coordination to text threads and shared docs. Spread is the companion app that closes that gap. This case study walks through identifying the gap, scoping a Next.js + Notion build, and shipping V1.1 Category Balance: a servings-based dot board that scales per-category targets to live RSVP headcount (Yes plus plus-ones plus half of Maybes), with host overrides surfaced as pills. Covers the locked stack, a PRD with success metrics and a decisions log, the Phase 1 manual-stub to V2.1 Claude-API roadmap for the AI dish suggester (built to ship product value first and earn eval data before swapping in the LLM), and surprise-event semantics baked in for the 2026-06-06 launch. Real artifacts: SPEC, PRD V1.1, 5 Notion databases, 13 typed API routes, host dashboard with category targets panel, and guest event page.',
+      'Pre-nursing students check prerequisites school by school, across pages that each word their rules differently. TrackRx checks a student\'s classes against 1,500+ prerequisite rules covering 250+ programs and shows what they qualify for, what is a few classes away, and what is missing. This case study covers validating the gap through competitor research, defining KPIs before launch (~90% of users finish the class check against a 40% target), a QA audit that verified 98.1% of quoted requirements word for word, and turning 400+ users, 35 state requests, and tester feedback into 40+ changes within 48 hours.',
     skills: [
-      'Identifying product gaps',
-      'PRD writing with success metrics',
-      'Phased AI roadmap (manual stub to API)',
-      'Live-data product UX',
-      'API and data model design',
+      'Market gap validation',
+      'KPI definition and analytics',
+      'Roadmap prioritization from user demand',
+      'Data quality auditing',
+      'Shipping fast on feedback',
     ],
-    readTime: 'Independent project · V1.1 case study',
-    url: 'https://docs.google.com/document/d/1C6Ol0CP15m7fdr7in6yHyaAsAey6KSGx/edit?usp=sharing&ouid=117838647202165509558&rtpof=true&sd=true',
-    status: 'live',
+    readTime: 'Founder project · case study in progress',
+    url: '#',
+    status: 'in-progress',
     artifacts: [
       {
-        label: 'V2 Spec',
-        url: 'https://docs.google.com/document/d/1SHE6zVt3G9PgeqWLvwWuicQvxrMlC7nh/edit?usp=sharing&ouid=117838647202165509558&rtpof=true&sd=true',
-        kind: 'doc',
-      },
-      {
-        label: 'PRD V1.1: Category Balance',
-        url: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:018c72aa-54cf-414f-88e2-a9b10e4b39fb',
-        kind: 'doc',
-      },
-      {
-        label: 'GitHub repo',
-        url: 'https://github.com/danielxhe/event-planner',
-        kind: 'repo',
-      },
-      {
         label: 'Live app',
-        url: 'https://dh-event-planner.vercel.app/',
+        url: 'https://gettrackrx.com',
         kind: 'app',
       },
     ],
@@ -94,6 +79,43 @@ const deepDives: DeepDive[] = [
     readTime: 'Self-initiated analysis · ~9 min read',
     url: 'https://docs.google.com/document/d/1s8ovCoycWKSYEoCX1Zl8QMQ9GLdYv6ol/export?format=pdf',
     status: 'live',
+  },
+  {
+    id: 'event-planner',
+    kind: 'Side Project',
+    title: 'Spread: A Partiful Companion for Potlucks',
+    tldr:
+      'Partiful handles RSVPs but leaves potluck coordination to text threads and shared docs. Spread is a small companion app (Next.js + Notion) that closes that gap, with a servings-based board that scales dish targets to live RSVP headcount. Includes the spec, a PRD, the repo, and the live app.',
+    skills: [
+      'Identifying product gaps',
+      'PRD writing',
+      'API and data model design',
+    ],
+    readTime: 'Side project · case study',
+    url: 'https://docs.google.com/document/d/1C6Ol0CP15m7fdr7in6yHyaAsAey6KSGx/edit?usp=sharing&ouid=117838647202165509558&rtpof=true&sd=true',
+    status: 'live',
+    artifacts: [
+      {
+        label: 'V2 Spec',
+        url: 'https://docs.google.com/document/d/1SHE6zVt3G9PgeqWLvwWuicQvxrMlC7nh/edit?usp=sharing&ouid=117838647202165509558&rtpof=true&sd=true',
+        kind: 'doc',
+      },
+      {
+        label: 'PRD V1.1: Category Balance',
+        url: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:018c72aa-54cf-414f-88e2-a9b10e4b39fb',
+        kind: 'doc',
+      },
+      {
+        label: 'GitHub repo',
+        url: 'https://github.com/danielxhe/event-planner',
+        kind: 'repo',
+      },
+      {
+        label: 'Live app',
+        url: 'https://dh-event-planner.vercel.app/',
+        kind: 'app',
+      },
+    ],
   },
 ];
 

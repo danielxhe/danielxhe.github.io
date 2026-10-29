@@ -10,9 +10,10 @@ const navLinks = [
 ];
 
 const deepDiveLinks = [
-  { label: 'Spread (Partiful Companion)', hash: 'event-planner' },
+  { label: 'TrackRx (Nursing Prereqs)', hash: 'trackrx' },
   { label: 'Varsity Tutors Teardown', hash: 'varsity' },
   { label: 'Zoe Scientific Teardown', hash: 'zoe' },
+  { label: 'Spread (Side Project)', hash: 'event-planner' },
 ];
 
 export function Navbar({ activeSection }: { activeSection: string }) {
