@@ -1,3 +1,4 @@
+import { RESUME_URL } from '../links';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { DownloadIcon, ExternalLinkIcon, MapPinIcon } from 'lucide-react';
@@ -39,7 +40,7 @@ export function Hero() {
           </p>
           <div className="mt-8 flex items-center gap-4 flex-wrap">
             <a
-              href="https://docs.google.com/document/d/1iXoB_vjtoDMnBkyGnLgnEudGZLIPIOHMoooFakHZ06g/export?format=pdf"
+              href={RESUME_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white font-body font-semibold rounded-lg hover:bg-accent-dark transition-colors shadow-sm">

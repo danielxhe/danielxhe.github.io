@@ -1,3 +1,4 @@
+import { RESUME_URL } from '../links';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -114,7 +115,7 @@ export function Navbar({ activeSection }: { activeSection: string }) {
             <LinkedinIcon className="w-4.5 h-4.5" />
           </a>
           <a
-            href="https://docs.google.com/document/d/1iXoB_vjtoDMnBkyGnLgnEudGZLIPIOHMoooFakHZ06g/export?format=pdf"
+            href={RESUME_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-accent text-white font-body text-sm font-semibold rounded-lg hover:bg-accent-dark transition-colors">
@@ -166,7 +167,7 @@ export function Navbar({ activeSection }: { activeSection: string }) {
               </Link>
               <div className="flex items-center gap-3 pt-2 border-t border-warm-100">
                 <a
-                  href="https://docs.google.com/document/d/1iXoB_vjtoDMnBkyGnLgnEudGZLIPIOHMoooFakHZ06g/export?format=pdf"
+                  href={RESUME_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 px-4 py-1.5 bg-accent text-white font-body text-sm font-semibold rounded-lg hover:bg-accent-dark transition-colors">
