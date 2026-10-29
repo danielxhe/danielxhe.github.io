@@ -5,10 +5,8 @@ const events = [
   { year: '2019', label: 'Project Management Intern', sub: 'Syska Hennessy', icon: '🏗️' },
   { year: '2020', label: 'Co-founder & Product Strategy Lead', sub: 'The Math Ghost', icon: '📱' },
   { year: '2021', label: 'Clinical Technician', sub: 'Private Practice', icon: '👓' },
-  { year: '2022', label: 'Stony Brook University', sub: 'Biochemistry, B.S.', icon: '📓' },
   { year: '2024', label: 'Cancer Researcher', sub: 'Ojima Research Group', icon: '🧪' },
   { year: '2026', label: 'Quantitative Researcher', sub: '19V Capital', icon: '📈' },
-  { year: '2026', label: 'Graduating', sub: 'Magna Cum Laude', icon: '🎓' },
   { year: '2026', label: 'Founder', sub: 'TrackRx', icon: '🩺' },
 ];
 
