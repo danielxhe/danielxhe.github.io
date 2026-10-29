@@ -22,7 +22,7 @@ import quantValidation from '../assets/quant_validation.svg';
 import quantOutcomes from '../assets/quant_outcomes.svg';
 import quantPlatform from '../assets/quant_platform.svg';
 import trackrxHome from '../assets/trackrx_home.png';
-import trackrxMobile from '../assets/trackrx_mobile.png';
+import trackrxDashboard from '../assets/trackrx_dashboard.png';
 interface SlideData {
   title: string;
   caption: string;
@@ -62,8 +62,8 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Built Around Real Users',
-    caption: 'Defined KPIs up front and built an analytics dashboard to track them: about 90% of users finish the class check against a 40% target. Tester feedback and 35 user state requests drove 40+ changes within 48 hours, including distance search, NCLEX filters, retake limits, and a best-match list.',
-    image: trackrxMobile
+    caption: 'Defined KPIs up front and built an analytics dashboard to track them: about 90% of users finish the class check against a 40% target. Tester feedback and 35 user state requests drove 40+ changes within 48 hours, including distance search, NCLEX filters, retake limits, and a best-match list. Shown: the dashboard for the current version; users from the v1 launch are archived separately and included in the 400+ total.',
+    image: trackrxDashboard
   }],
 
   link: {
