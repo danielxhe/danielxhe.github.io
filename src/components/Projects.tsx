@@ -905,48 +905,44 @@ export function Projects() {
                 </div>
                 }
               </div>
-            </React.Fragment>
-          ))}
-        </div>
-
-        {/* On 2-col and 3-col: expand below all cards */}
-        <div className="hidden sm:block">
-          <AnimatePresence mode="wait">
-            {selectedProject && selectedIndex !== null &&
+              {/* 2-col screens: open details full width right under the row of the clicked card */}
+              {selectedProject && selectedIndex !== null &&
+                Math.floor(selectedIndex / 2) === Math.floor(i / 2) &&
+                (i % 2 === 1 || i === projects.length - 1) &&
               <motion.div
                 key={selectedIndex}
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-                className="overflow-hidden">
-                <div className="bg-white rounded-xl border border-warm-100 shadow-md mt-4">
-                  <div className="p-6 md:p-8">
-                    <div className="flex items-center justify-between mb-4">
-                      <div>
-                        <p className="font-body text-xs font-semibold text-accent uppercase tracking-wider">
-                          Project Details
-                        </p>
-                        <h3 className="font-display text-xl md:text-2xl font-bold text-gray-900 mt-1">
-                          {selectedProject.title}
-                        </h3>
-                      </div>
-                      <button
-                        onClick={() => setSelectedIndex(null)}
-                        className="p-2 rounded-full text-gray-400 hover:text-gray-600 hover:bg-warm-50 transition-colors"
-                        aria-label="Close details">
-                        ✕
-                      </button>
-                    </div>
-                    <p className="font-body text-gray-600 text-sm md:text-base leading-relaxed mb-6">
-                      {selectedProject.description}
-                    </p>
-                    <SlideCarousel slides={selectedProject.slides} />
-                  </div>
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.25, ease: 'easeOut' }}
+                className="hidden sm:block sm:col-span-2 -mt-2">
+          <div className="bg-white rounded-xl border border-warm-100 shadow-md">
+            <div className="p-6 md:p-8">
+              <div className="flex items-center justify-between mb-4">
+                <div>
+                  <p className="font-body text-xs font-semibold text-accent uppercase tracking-wider">
+                    Project Details
+                  </p>
+                  <h3 className="font-display text-xl md:text-2xl font-bold text-gray-900 mt-1">
+                    {selectedProject.title}
+                  </h3>
                 </div>
+                <button
+                  onClick={() => setSelectedIndex(null)}
+                  className="p-2 rounded-full text-gray-400 hover:text-gray-600 hover:bg-warm-50 transition-colors"
+                  aria-label="Close details">
+                  ✕
+                </button>
+              </div>
+              <p className="font-body text-gray-600 text-sm md:text-base leading-relaxed mb-6">
+                {selectedProject.description}
+              </p>
+              <SlideCarousel slides={selectedProject.slides} />
+            </div>
+          </div>
               </motion.div>
-            }
-          </AnimatePresence>
+              }
+            </React.Fragment>
+          ))}
         </div>
 
       </div>
