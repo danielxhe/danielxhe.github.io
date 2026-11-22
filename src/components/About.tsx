@@ -53,8 +53,10 @@ export function About() {
           {/* Right content */}
           <div className="flex-1">
             <p className="font-body text-gray-600 text-base md:text-lg leading-relaxed">
-              Biochem grad who builds things. I founded TrackRx (400+ users), do
-              quantitative research at 19V Capital, and co-founded a TikTok brand
+              Biochem grad who builds things. I built TrackRx, a nursing
+              prerequisite matcher 300+ students used in its first two weeks,
+              work as a data analyst at 19V Capital, ran operations as the senior
+              technician at an optometry practice, and co-created a math TikTok
               that hit 1.2M followers.
             </p>
             <p className="mt-4 font-body text-gray-700 text-base md:text-lg leading-relaxed font-medium">

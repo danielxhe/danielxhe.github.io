@@ -3,11 +3,11 @@ import { motion, useInView } from 'framer-motion';
 
 const events = [
   { year: '2019', label: 'Project Management Intern', sub: 'Syska Hennessy', icon: '🏗️' },
-  { year: '2020', label: 'Co-founder & Product Strategy Lead', sub: 'The Math Ghost', icon: '📱' },
-  { year: '2021', label: 'Clinical Technician', sub: 'Private Practice', icon: '👓' },
-  { year: '2024', label: 'Cancer Researcher', sub: 'Ojima Research Group', icon: '🧪' },
-  { year: '2026', label: 'Quantitative Researcher', sub: '19V Capital', icon: '📈' },
-  { year: '2026', label: 'Founder', sub: 'TrackRx', icon: '🩺' },
+  { year: '2020', label: 'Co-Creator', sub: 'The Math Ghost (TikTok)', icon: '📱' },
+  { year: '2021', label: 'Clinical Technician', sub: 'Optometry Practice', icon: '👓' },
+  { year: '2024', label: 'Undergraduate Researcher', sub: 'Ojima Research Group', icon: '🧪' },
+  { year: '2026', label: 'Data Analyst', sub: '19V Capital', icon: '📈' },
+  { year: '2026', label: 'Creator', sub: 'TrackRx', icon: '🩺' },
 ];
 
 export function Timeline() {

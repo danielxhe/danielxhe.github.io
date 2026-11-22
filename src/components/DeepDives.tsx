@@ -28,7 +28,7 @@ const deepDives: DeepDive[] = [
     kind: 'Case Study',
     title: 'TrackRx: Matching Pre-Nursing Students to Programs',
     tldr:
-      'Pre-nursing students check prerequisites school by school, across pages that each word their rules differently. TrackRx checks a student\'s classes against 1,500+ prerequisite rules covering 250+ programs and shows what they qualify for, what is a few classes away, and what is missing. This case study covers validating the gap through competitor research, defining KPIs before launch (~90% of v1 demo users finished the class check against a 40% target), a QA audit that verified 98.1% of quoted requirements word for word, and turning 400+ users, 35 state requests, and tester feedback into 40+ changes within 48 hours.',
+      'Pre-nursing students check prerequisites school by school, across pages that each word their rules differently. TrackRx checks a student\'s classes against 1,600+ prerequisite rules covering 330+ programs in 8 states and shows what they qualify for, what is a few classes away, and what is missing. This case study covers validating the gap through competitor research, defining an activation KPI before launch and measuring against it (34% vs a 40% target), an independent source audit of 880 requirement checks with 59 corrections, and turning tester feedback and 77 state requests into the roadmap.',
     skills: [
       'Market gap validation',
       'KPI definition and analytics',
@@ -36,7 +36,7 @@ const deepDives: DeepDive[] = [
       'Data quality auditing',
       'Shipping fast on feedback',
     ],
-    readTime: 'Founder project · ~2 min skim, ~6 min full read',
+    readTime: 'Solo project · ~2 min skim, ~6 min full read',
     url: 'https://docs.google.com/document/d/1jqXUvSWkEB4g_Hjql_-jg7klyJ2onSScs-x4pfKnKII/export?format=pdf',
     status: 'live',
     artifacts: [

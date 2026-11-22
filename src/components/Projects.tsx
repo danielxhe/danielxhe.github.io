@@ -44,14 +44,14 @@ interface ProjectData {
 const projects: ProjectData[] = [
 {
   title: 'TrackRx: Nursing Prerequisite Matcher',
-  anchorMetric: '250+ programs · 1,500+ rules · 400+ users',
+  anchorMetric: '330+ programs · 1,600+ rules · 8 states',
   description:
-  'Founded and shipped a free platform for pre-nursing students that checks their classes against 1,500+ prerequisite rules covering 250+ programs. Validated the market gap through competitor research, prioritized the roadmap from 400+ users, 35 user state requests, and tester feedback, and ran an independent QA audit that verified 98.1% of quoted requirements word for word against official school pages.',
+  'Designed and launched a free platform for pre-nursing students that checks their classes against 1,600+ prerequisite rules covering 330+ programs in 8 states. 300+ students completed a class check in the first 2 weeks, and I logged 77 new-state requests across 24 states to prioritize expansion. An independent source audit of 880 requirement checks led to 59 corrections, keeping published rules matched to school sources.',
   metrics: [
-  '~90% finish in v1 demo (40% target)',
-  '35 state requests',
-  '40+ changes in 48 hours',
-  '98.1% quotes verified'],
+  '300+ users in 2 weeks',
+  '34% activation (40% target)',
+  '77 state requests',
+  '880-check source audit'],
 
   illustration: <TrackRxSVG />,
   slides: [
@@ -62,7 +62,7 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Built Around Real Users',
-    caption: 'Defined KPIs up front and built an analytics dashboard to track them: about 90% of users in the targeted v1 demo launch finished the class check against a 40% target. Tester feedback and 35 user state requests drove 40+ changes within 48 hours, including distance search, NCLEX filters, retake limits, and a best-match list. Shown: the dashboard for the current public version, where traffic is broader than the targeted v1 demo; v1 users are archived separately and included in the 400+ total.',
+    caption: 'Defined the activation KPI up front and built a privacy-safe funnel dashboard to track it. Activation is 34% against a 40% target, so the dashboard breaks the intake down card by card to show where people drop off; that data led to cutting a sign-in step only 3% of users completed. Tester feedback drove distance search, NCLEX filters, retake limits, and a best-match list. Shown: the dashboard during launch week.',
     image: trackrxDashboard
   }],
 
@@ -73,13 +73,13 @@ const projects: ProjectData[] = [
 },
 {
   title: 'Quantitative Research: Multi-Asset Strategy Platform',
-  anchorMetric: '100+ strategies vetted · 90%+ kill rate',
+  anchorMetric: '100+ strategies tested · nearly 90% rejected',
   description:
-  'Built and ran a multi-asset quantitative research platform at 19V Capital, spanning futures, commodities, crypto, and prediction markets. Vetted 100+ strategies under pre-registered criteria, killing over 90%; the first strategy to clear the full validation stack is now tracked live. Grew the approval bar from a 6-step checklist to a 38-gate validation framework, consolidated 170+ datasets onto a governed data platform, and built AI research agents (Claude Code) that automate parts of the funnel.',
+  'Built a multi-asset research platform at 19V Capital spanning futures, commodities, crypto, and prediction markets. Tested 100+ trading strategies under pre-registered pass/fail rules, rejecting nearly 90% and advancing the rest to paper or live tracking. Caught 4 data-timing errors that had made failing strategies look profitable and turned each into an automated check, consolidated 170+ datasets onto a versioned data platform, and built Claude Code agents that automate parts of the research funnel.',
   metrics: [
-  '100+ strategies vetted',
-  '90%+ kill rate',
-  '38 validation gates',
+  '100+ strategies tested',
+  'nearly 90% rejected',
+  '4 data-timing errors caught',
   '170+ datasets'],
 
   illustration: <QuantSVG />,
@@ -101,47 +101,47 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Hypothesis Outcomes',
-    caption: 'The first cohort: of 62 catalogued hypotheses, 17 advanced to pre-registration and full backtesting, and exactly one survived every layer. That survivor is now tracked live against its backtest distribution. Common kill patterns include realized-disruption signals already priced into the futures, single-grid-point reanalysis that turns out to be noise rather than weather, and cumulative-event triggers that fire after spot news has already moved. Across the full funnel the kill rate stays above 90%, which is the point: the gates exist to remove placebos before they cost money.',
+    caption: 'The first cohort: of 62 catalogued hypotheses, 17 advanced to pre-registration and full backtesting, and exactly one survived every layer. That survivor advanced to forward tracking. Common kill patterns include realized-disruption signals already priced into the futures, single-grid-point reanalysis that turns out to be noise rather than weather, and cumulative-event triggers that fire after spot news has already moved. Across the full funnel of 100+ strategies, nearly 90% have been rejected, which is the point: the gates exist to remove placebos before they cost money.',
     image: quantOutcomes
   },
   {
     title: 'Data Platform & AI Agents',
-    caption: '170+ datasets spanning 15+ years of market history live on a governed data platform (Python, AWS S3, GitHub CI) with automated guards against lookahead bias and data leakage, so every result traces back to versioned inputs. AI research agents built with Claude Code automate portfolio-fit screening and post-trade attribution, alongside a meta-agent that researches a domain, distills a quality framework, and authors new agents.',
+    caption: '170+ datasets spanning 15+ years of market history live on a governed data platform (Python, AWS S3, GitHub CI) with automated guards against lookahead bias and data leakage, so every result traces back to versioned inputs. AI research agents built with Claude Code automate portfolio-fit screening and post-trade attribution, alongside a meta-agent that researches a domain, distills a quality framework, and drafts new agents.',
     image: quantPlatform
   }],
 
 },
 {
   title: 'Hudson Yards: Ground Floor Space Programming',
-  anchorMetric: '144,000 SF · 4-person team',
+  anchorMetric: '144,000 SF · 5+ design cycles',
   description:
-  'Owned ground-floor space allocation for a 144,000 SF mixed-use tower in Hudson Yards, balancing vendor, grocery, and MEP requirements across structural, architectural, and MEP disciplines. Delivered documentation 2-3 days ahead of biweekly QA deadlines over 5+ design development cycles.',
+  'As a project management intern on a 4-intern team, drafted ground-floor space allocation in AutoCAD for a 144,000 SF mixed-use tower in Hudson Yards, working around fixed plumbing and structural constraints. Coordinated layout revisions across HVAC, structural, and architectural disciplines through 5+ design cycles, and the layout recommendations were adopted into the final design.',
   metrics: [
-  '2-3 days ahead of QA deadlines',
-  '5+ design cycles',
   '144,000 SF',
-  '4-person team'],
+  '5+ design cycles',
+  '3 engineering disciplines',
+  'Adopted into final design'],
 
   illustration: <FloorPlanSVG />,
   slides: [
   {
     title: '144,000 SF Mixed-Use Tower',
-    caption: 'Owned ground-floor space allocation for a 144,000 SF mixed-use tower in Hudson Yards. Balanced vendor, grocery, and MEP requirements across structural, architectural, and MEP disciplines. Delivered documentation 2-3 days ahead of biweekly QA deadlines over 5+ design development cycles.',
+    caption: 'Drafted ground-floor space allocation in AutoCAD for a 144,000 SF mixed-use tower in Hudson Yards, fitting vendor, grocery, and MEP needs around a fixed structural grid. Coordinated layout revisions across HVAC, structural, and architectural disciplines through 5+ design cycles.',
     image: floorPlanOriginal
   },
   {
     title: 'Original Ground Floor Program',
-    caption: 'The ground floor needed 10+ vendor spaces allocated against a fixed structural grid and curved commercial facade. Mapped structural requirements, flagged structural conflicts, and began space allocation. Every conflict caught here prevented a costly change order downstream.',
+    caption: 'The ground floor needed 10+ vendor spaces allocated against a fixed structural grid and curved commercial facade. Mapped structural requirements, flagged structural conflicts, and began space allocation. Catching conflicts at this stage avoids change orders later.',
     image: renderReflective
   },
   {
     title: 'Developed Floor Plan',
-    caption: 'Resolved open conflicts and produced a fully coordinated ground floor plan. 23 documented design decisions including MEP clustering, shared plumbing walls, HVAC isolation, inline kiosks, L-shaped walkway, dual egress, and a luxury retail corridor.',
+    caption: 'The developed ground floor plan, with 23 documented design decisions including MEP clustering, shared plumbing walls, HVAC isolation, inline kiosks, L-shaped walkway, dual egress, and a luxury retail corridor.',
     image: floorPlanSvg
   },
   {
     title: 'Building Massing and Concourse',
-    caption: 'Coordinated ground floor space programming with the overall building massing to ensure the curved facade and arcing public concourse aligned from tower to street level. The concourse became the primary spine of the retail experience.',
+    caption: 'Aligned the ground floor layout with the overall building massing to ensure the curved facade and arcing public concourse aligned from tower to street level. The concourse became the primary spine of the retail experience.',
     image: renderMassing
   }],
 
@@ -150,24 +150,24 @@ const projects: ProjectData[] = [
   title: 'The Math Ghost: TikTok Growth & Monetization',
   anchorMetric: '1.2M followers · 100M+ views',
   description:
-  'Co-founded a math education TikTok brand and engineered a data-driven content model using A/B testing and engagement analytics. Owned the full product lifecycle from content strategy to brand partnership pipeline.',
+  'Co-created a math education TikTok account and grew it from 200K to 1.2M followers by testing hook structure, video length, and posting cadence against retention analytics. Ran brand partnerships from outreach to close.',
   metrics: [
   '200K → 1.2M followers',
   '100M+ views',
   '10+ videos at 3M+ views',
   '50K+ avg views',
-  '$15,000 in brand deals'],
+  '$15,000+ in brand deals'],
 
   illustration: <TikTokSVG />,
   slides: [
   {
     title: 'Channel Growth: 200K to 1.2M',
-    caption: 'Built a repeatable content system over 18 months using A/B testing across format, length, and posting cadence. Scaled to 1.2M followers and 15.4M likes at peak. This screenshot reflects the account in 2026 following acquisition — organic decline is expected on dormant accounts after a change in management.',
+    caption: 'Built a repeatable content system over 18 months by testing format, length, and posting cadence against retention analytics. Scaled to 1.2M followers and 15.4M likes at peak. This screenshot reflects the account in 2026 following acquisition — organic decline is expected on dormant accounts after a change in management.',
     image: tiktokProfile
   },
   {
     title: 'Inbound Brand Partnership',
-    caption: 'Example of inbound brand partnership outreach received at scale. Negotiated deliverable scope, format, and compensation structure with multiple companies including EdTech startup HiEmile. Part of $15,000 in total brand deals closed across the channel lifetime.',
+    caption: 'Example of inbound brand partnership outreach received at scale. Negotiated deliverable scope, format, and compensation structure with multiple companies including EdTech startup HiEmile. Part of $15,000+ in total brand deals closed across the channel lifetime.',
     image: tiktokBrandDeal,
     headerImage: partnerly
   },
@@ -214,7 +214,7 @@ function TrackRxSVG() {
         </g>
       ))}
       <text x="160" y="190" fontSize="8" fill="#9CA3AF" fontFamily="Nunito" textAnchor="middle">
-        250+ programs · 1,500+ rules
+        330+ programs · 1,600+ rules
       </text>
     </svg>);
 

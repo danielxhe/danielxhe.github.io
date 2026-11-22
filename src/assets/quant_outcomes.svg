@@ -3,8 +3,8 @@
 
   <text x="40" y="46" font-size="22" font-weight="700" fill="#0F172A">Hypothesis Outcomes</text>
   <text x="40" y="68" font-size="13" fill="#64748B">where the first 62 catalogued hypotheses ended up</text>
-  <text x="600" y="46" font-size="14" font-weight="700" fill="#0F172A" text-anchor="end">full funnel to date: 100+ vetted</text>
-  <text x="600" y="68" font-size="13" font-weight="600" fill="#2563EB" text-anchor="end">kill rate above 90%</text>
+  <text x="600" y="46" font-size="14" font-weight="700" fill="#0F172A" text-anchor="end">full funnel to date: 100+ tested</text>
+  <text x="600" y="68" font-size="13" font-weight="600" fill="#2563EB" text-anchor="end">nearly 90% rejected</text>
 
   <line x1="40" y1="84" x2="600" y2="84" stroke="#E2E8F0" stroke-width="1"/>
 

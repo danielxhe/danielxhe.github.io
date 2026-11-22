@@ -33,10 +33,10 @@ export function Hero() {
             Product · Operations · Strategy
           </p>
           <p className="mt-6 font-body text-gray-600 text-base md:text-lg leading-relaxed max-w-lg">
-            Founder of TrackRx, a nursing prerequisite matcher with 400+ users.
-            I build products from scratch, measure what users actually do, and
-            ship fast, with a track record across quantitative research, digital
-            growth, and real estate project management.
+            I built TrackRx, a free nursing prerequisite matcher covering 330+
+            programs in 8 states. I build products from scratch and measure what
+            users actually do, with experience across data analysis, clinical
+            operations, digital growth, and construction project management.
           </p>
           <div className="mt-8 flex items-center gap-4 flex-wrap">
             <a
@@ -77,8 +77,8 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.6, ease: 'easeOut' }}>
               <motion.div animate={{ y: [0, -6, 0] }} transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
                 <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Hudson Yards</p>
-                <p className="font-display text-2xl font-bold text-accent">Led team of 4</p>
-                <p className="font-body text-[10px] text-gray-400">144K SF tower</p>
+                <p className="font-display text-2xl font-bold text-accent">144K SF</p>
+                <p className="font-body text-[10px] text-gray-400">mixed-use tower · 5+ design cycles</p>
               </motion.div>
             </motion.div>
             <motion.div
@@ -89,7 +89,7 @@ export function Hero() {
               <motion.div animate={{ y: [0, -4, 0] }} transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
                 <p className="font-body text-xs text-gray-400 uppercase tracking-wider">Math Ghost</p>
                 <p className="font-display text-2xl font-bold text-accent">1.2M</p>
-                <p className="font-body text-[10px] text-gray-400">followers · 100M views</p>
+                <p className="font-body text-[10px] text-gray-400">followers · 100M+ views</p>
               </motion.div>
             </motion.div>
             <motion.div
@@ -99,8 +99,8 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 1.2, ease: 'easeOut' }}>
               <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
                 <p className="font-body text-xs text-gray-400 uppercase tracking-wider">TrackRx</p>
-                <p className="font-display text-2xl font-bold text-accent">400+ users</p>
-                <p className="font-body text-[10px] text-gray-400">250+ programs · 1,500+ rules</p>
+                <p className="font-display text-2xl font-bold text-accent">300+ users</p>
+                <p className="font-body text-[10px] text-gray-400">first 2 weeks · 330+ programs</p>
               </motion.div>
             </motion.div>
           </div>
