@@ -72,7 +72,7 @@ const projects: ProjectData[] = [
   }
 },
 {
-  title: 'Quantitative Research: Multi-Asset Strategy Platform',
+  title: '19V Capital: Multi-Asset Strategy Research Platform',
   anchorMetric: '100+ strategies tested · nearly 90% rejected',
   description:
   'Built a multi-asset research platform at 19V Capital spanning futures, commodities, crypto, and prediction markets. Tested 100+ trading strategies under pre-registered pass/fail rules, rejecting nearly 90% and advancing the rest to paper or live tracking. Caught 4 data-timing errors that had made failing strategies look profitable and turned each into an automated check, consolidated 170+ datasets onto a versioned data platform, and built Claude Code agents that automate parts of the research funnel.',
@@ -96,12 +96,12 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Validation Stack',
-    caption: 'Every pre-registered hypothesis runs through a stack of standard robustness checks: out-of-sample testing on held-out data, walk-forward cross-validation, permutation and bootstrap significance tests, correction for multiple testing across the strategy family, and stress under realistic execution costs. This 6-layer core has since grown into a 38-gate framework that also covers data reality (was the signal even knowable at trade time?), era stability, portfolio fit, and live decay monitoring. Most candidate strategies fail at one of these layers.',
+    caption: 'Every pre-registered hypothesis runs through a stack of standard robustness checks: out-of-sample testing on held-out data, walk-forward cross-validation, permutation and bootstrap significance tests, correction for multiple testing across the strategy family, and stress under realistic execution costs. The framework also covers data reality (was the signal even knowable at trade time?), era stability, portfolio fit, and live decay monitoring. Most candidate strategies fail at one of these layers.',
     image: quantValidation
   },
   {
     title: 'Hypothesis Outcomes',
-    caption: 'The first cohort: of 62 catalogued hypotheses, 17 advanced to pre-registration and full backtesting, and exactly one survived every layer. That survivor advanced to forward tracking. Common kill patterns include realized-disruption signals already priced into the futures, single-grid-point reanalysis that turns out to be noise rather than weather, and cumulative-event triggers that fire after spot news has already moved. Across the full funnel of 100+ strategies, nearly 90% have been rejected, which is the point: the gates exist to remove placebos before they cost money.',
+    caption: 'Of 100+ strategies tested, nearly 90% have been rejected and the rest advanced to paper or live tracking. Common kill patterns include realized-disruption signals already priced into the futures, single-grid-point reanalysis that turns out to be noise rather than weather, and cumulative-event triggers that fire after spot news has already moved. The rejection rate is the point: the gates exist to remove placebos before they cost money.',
     image: quantOutcomes
   },
   {
@@ -136,7 +136,7 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Developed Floor Plan',
-    caption: 'The developed ground floor plan, with 23 documented design decisions including MEP clustering, shared plumbing walls, HVAC isolation, inline kiosks, L-shaped walkway, dual egress, and a luxury retail corridor.',
+    caption: 'The developed ground floor plan, with 24 documented design decisions including MEP clustering, shared plumbing walls, HVAC isolation, inline kiosks, L-shaped walkway, dual egress, and a luxury retail corridor.',
     image: floorPlanSvg
   },
   {
@@ -162,12 +162,12 @@ const projects: ProjectData[] = [
   slides: [
   {
     title: 'Channel Growth: 200K to 1.2M',
-    caption: 'Built a repeatable content system over 18 months by testing format, length, and posting cadence against retention analytics. Scaled to 1.2M followers and 15.4M likes at peak. This screenshot reflects the account in 2026 following acquisition — organic decline is expected on dormant accounts after a change in management.',
+    caption: 'Built a repeatable content system over 18 months by testing format, length, and posting cadence against retention analytics. Scaled to 1.2M followers at peak. This screenshot (1M followers, 15.4M likes) reflects the account in 2026 following acquisition. Organic decline is expected on dormant accounts after a change in management.',
     image: tiktokProfile
   },
   {
     title: 'Inbound Brand Partnership',
-    caption: 'Example of inbound brand partnership outreach received at scale. Negotiated deliverable scope, format, and compensation structure with multiple companies including EdTech startup HiEmile. Part of $15,000+ in total brand deals closed across the channel lifetime.',
+    caption: 'Example of the inbound partnership offers the channel received (shown: Partnerly, a co-marketing network). Ran brand partnerships from outreach to close, totaling $15,000+ in brand deals across the channel lifetime.',
     image: tiktokBrandDeal,
     headerImage: partnerly
   },

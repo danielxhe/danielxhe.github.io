@@ -62,7 +62,7 @@ export function Contact() {
           </h2>
           <div className="mt-2 mx-auto w-12 h-1 bg-accent rounded-full" />
           <p className="mt-4 font-body text-gray-500 text-center text-sm md:text-base">
-            Open to product, operations, and consulting roles in NYC — feel free to reach out directly.
+            Open to product, operations, and consulting roles in NYC. Feel free to reach out directly.
           </p>
 
           {status === 'sent' ? (
@@ -92,7 +92,7 @@ export function Contact() {
                 {status === 'sending' ? 'Sending...' : 'Send Message'}
               </button>
               {status === 'error' && (
-                <p className="text-sm text-red-500 mt-2">Something went wrong — please email <a href="mailto:daniel.xr.he@gmail.com" className="underline">daniel.xr.he@gmail.com</a> directly.</p>
+                <p className="text-sm text-red-500 mt-2">Something went wrong. Please email <a href="mailto:daniel.xr.he@gmail.com" className="underline">daniel.xr.he@gmail.com</a> directly.</p>
               )}
             </form>
           )}

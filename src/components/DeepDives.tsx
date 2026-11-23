@@ -50,7 +50,7 @@ const deepDives: DeepDive[] = [
   {
     id: 'varsity',
     kind: 'Product Teardown',
-    title: 'Varsity Tutors — A Marketplace Built to Extract',
+    title: 'Varsity Tutors: A Marketplace Built to Extract',
     tldr:
       'Varsity Tutors takes 80% of every dollar parents pay, hides pricing behind a sales call, and relies on hard-to-cancel subscriptions to retain users. Its parent company has never been profitable, has lost over 90% of its stock value, and faces NYSE delisting. A breakdown of why those product decisions are structural, with a proposed alternative model.',
     skills: [
@@ -67,9 +67,9 @@ const deepDives: DeepDive[] = [
   {
     id: 'zoe',
     kind: 'Scientific Teardown',
-    title: 'Zoe — Does the Science Match the Promise?',
+    title: 'Zoe: Does the Science Match the Promise?',
     tldr:
-      'Zoe is a personalized nutrition company built on real microbiome science — a published RCT, peer-reviewed research, honest caveats. But the evidence supports the premise more than the promise. A teardown of the gap between what the science establishes and what the product implies, evaluated against the primary literature.',
+      'Zoe is a personalized nutrition company built on real microbiome science: a published RCT, peer-reviewed research, honest caveats. But the evidence supports the premise more than the promise. A teardown of the gap between what the science establishes and what the product implies, evaluated against the primary literature.',
     skills: [
       'Product analysis',
       'Scientific literacy',

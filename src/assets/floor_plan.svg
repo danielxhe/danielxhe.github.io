@@ -69,7 +69,7 @@
 
 <!-- HVAC isolation -->
 <rect x="148" y="272" width="217" height="10" rx="2" fill="#ffccbc" stroke="#e64a19" stroke-width="1" stroke-dasharray="4 2" opacity="0.85"/>
-<text font-family="Sora, sans-serif" font-size="6" font-weight="500" text-anchor="middle" fill="#bf360c" x="256" y="281">HVAC isolation — grease / refrigeration</text>
+<text font-family="Sora, sans-serif" font-size="6" font-weight="500" text-anchor="middle" fill="#bf360c" x="256" y="281">HVAC isolation: grease / refrigeration</text>
 
 <!-- LOADING BOH -->
 <rect x="36" y="36" width="103" height="72" rx="3" fill="#cfd8dc" stroke="#78909c" stroke-width="1"/>
@@ -96,7 +96,7 @@
 <rect x="36" y="282" width="12" height="210" rx="2" fill="#a1887f" stroke="#6d4c41" stroke-width="1" opacity="0.7"/>
 <!-- Service corridor horizontal to food court -->
 <rect x="36" y="484" width="328" height="12" rx="2" fill="#a1887f" stroke="#6d4c41" stroke-width="1" opacity="0.7"/>
-<text font-family="Sora, sans-serif" font-size="6" fill="#3e2723" transform="translate(43,390) rotate(-90)" text-anchor="middle">service corridor — BOH spine</text>
+<text font-family="Sora, sans-serif" font-size="6" fill="#3e2723" transform="translate(43,390) rotate(-90)" text-anchor="middle">service corridor: BOH spine</text>
 <text font-family="Sora, sans-serif" font-size="6" fill="#3e2723" x="130" y="494">→ food court service access</text>
 
 <!-- Delivery arrow -->
@@ -237,7 +237,7 @@
   <text x="606" y="65">Grocery + food court on prime facade</text>
 
   <circle cx="596" cy="82" r="3.5" fill="#fafaf6" stroke="#555" stroke-width="1"/>
-  <text x="606" y="85">Wide arcing concourse — boulevard</text>
+  <text x="606" y="85">Wide arcing concourse: boulevard</text>
 
   <circle cx="596" cy="102" r="3.5" fill="#e3f2fd" stroke="#1565c0" stroke-width="1"/>
   <text x="606" y="105">Cafe open on concourse</text>
@@ -252,14 +252,14 @@
   <text font-size="6.5" fill="#666" x="606" y="172">(museum → jewelry → clothing)</text>
 
   <circle cx="596" cy="186" r="3.5" fill="#a1887f"/>
-  <text x="606" y="189">Service corridor — full BOH spine</text>
+  <text x="606" y="189">Service corridor: full BOH spine</text>
   <text font-size="6.5" fill="#666" x="606" y="200">(loading dock → food court delivery)</text>
 
   <circle cx="596" cy="214" r="3.5" fill="#efebe9" stroke="#795548" stroke-width="1"/>
   <text x="606" y="217">Waste staging at loading dock</text>
 
   <circle cx="596" cy="234" r="3.5" fill="#d7ccc8" stroke="#795548" stroke-width="1"/>
-  <text x="606" y="237">Grease trap — FC code req.</text>
+  <text x="606" y="237">Grease trap: FC code req.</text>
 
   <circle cx="596" cy="254" r="3.5" fill="#ffcdd2" stroke="#c62828" stroke-width="1"/>
   <text x="606" y="257">2× fire stairs (lobby + food court)</text>
@@ -272,7 +272,7 @@
   <text font-size="6.5" fill="#666" x="606" y="308">(captive resident audience)</text>
 
   <circle cx="596" cy="322" r="3.5" fill="#f8bbd0" stroke="#c2185b" stroke-width="1"/>
-  <text x="606" y="325">Salon/spa — luxury corridor</text>
+  <text x="606" y="325">Salon/spa: luxury corridor</text>
 
   <circle cx="596" cy="342" r="3.5" fill="#388e3c"/>
   <text x="606" y="345">Museum as traffic driver</text>
@@ -281,7 +281,7 @@
   <text x="606" y="365">HVAC isolation zone</text>
 
   <circle cx="596" cy="382" r="3.5" fill="#ffeb3b" stroke="#888" stroke-width="1"/>
-  <text x="606" y="385">Dual egress — food court</text>
+  <text x="606" y="385">Dual egress: food court</text>
 
   <circle cx="596" cy="402" r="3.5" fill="#455a64"/>
   <text x="606" y="405">MEP core + elec. room</text>
@@ -293,7 +293,7 @@
   <text x="606" y="445">Floor drains clustered</text>
 
   <circle cx="596" cy="462" r="3.5" fill="#0277bd"/>
-  <text x="606" y="465">Sportswear — destination only</text>
+  <text x="606" y="465">Sportswear: destination only</text>
 
   <circle cx="596" cy="482" r="3.5" fill="#fff8e1" stroke="#ff8f00" stroke-width="1"/>
   <text x="606" y="485">Pop-up flex near food court</text>
@@ -312,7 +312,7 @@
 </g>
 
 <!-- Floor label -->
-<text font-family="Sora, sans-serif" font-size="9" font-weight="500" fill="#555" x="36" y="585">GROUND LEVEL — 144,000 SF Mixed-Use Tower, Hudson Yards NY</text>
+<text font-family="Sora, sans-serif" font-size="9" font-weight="500" fill="#555" x="36" y="585">GROUND LEVEL: 144,000 SF Mixed-Use Tower, Hudson Yards NY</text>
 <text font-family="Sora, sans-serif" font-size="7.5" fill="#888" x="36" y="598">Space programming · DD coordination · 4-intern team · 5+ design cycles</text>
 <text font-family="Sora, sans-serif" font-size="7.5" fill="#888" x="36" y="611">23 design decisions · market hall concourse · luxury corridor · revenue-optimized mix</text>
 
