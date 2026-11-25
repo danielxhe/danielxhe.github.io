@@ -28,7 +28,7 @@ const deepDives: DeepDive[] = [
     kind: 'Case Study',
     title: 'TrackRx: Matching Pre-Nursing Students to Programs',
     tldr:
-      'Pre-nursing students check prerequisites school by school, across pages that each word their rules differently. TrackRx checks a student\'s classes against 1,600+ prerequisite rules covering 330+ programs in 8 states and shows what they qualify for, what is a few classes away, and what is missing. This case study covers validating the gap through competitor research, defining an activation KPI before launch and measuring against it (34% vs a 40% target), an independent source audit of 880 requirement checks with 59 corrections, and turning tester feedback and 77 state requests into the roadmap.',
+      'Pre-nursing students check prerequisites school by school, across pages that each word their rules differently. TrackRx checks a student\'s classes against 3,000+ prerequisite rules covering 650+ programs in 8 states and shows what they qualify for, what is a few classes away, and what is missing. This case study covers validating the gap through competitor research, defining a completion KPI before launch and rebuilding the intake until it rose from 32% to 40% (the target), an independent source audit of 880 requirement checks with 59 corrections, and turning tester feedback and 77 state requests into the roadmap.',
     skills: [
       'Market gap validation',
       'KPI definition and analytics',

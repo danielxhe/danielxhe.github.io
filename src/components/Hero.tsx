@@ -33,7 +33,7 @@ export function Hero() {
             Product · Operations · Strategy
           </p>
           <p className="mt-6 font-body text-gray-600 text-base md:text-lg leading-relaxed max-w-lg">
-            I built TrackRx, a free nursing prerequisite matcher covering 330+
+            I built TrackRx, a free nursing prerequisite matcher covering 650+
             programs in 8 states. I build products from scratch and measure what
             users actually do, with experience across data analysis, clinical
             operations, digital growth, and construction project management.
@@ -100,7 +100,7 @@ export function Hero() {
               <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}>
                 <p className="font-body text-xs text-gray-400 uppercase tracking-wider">TrackRx</p>
                 <p className="font-display text-2xl font-bold text-accent">300+ users</p>
-                <p className="font-body text-[10px] text-gray-400">first 2 weeks · 330+ programs</p>
+                <p className="font-body text-[10px] text-gray-400">first 2 weeks · 650+ programs</p>
               </motion.div>
             </motion.div>
           </div>

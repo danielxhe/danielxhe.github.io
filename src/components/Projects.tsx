@@ -44,12 +44,12 @@ interface ProjectData {
 const projects: ProjectData[] = [
 {
   title: 'TrackRx: Nursing Prerequisite Matcher',
-  anchorMetric: '330+ programs · 1,600+ rules · 8 states',
+  anchorMetric: '650+ programs · 3,000+ rules · 8 states',
   description:
-  'Designed and launched a free platform for pre-nursing students that checks their classes against 1,600+ prerequisite rules covering 330+ programs in 8 states. 300+ students completed a class check in the first 2 weeks, and I logged 77 new-state requests across 24 states to prioritize expansion. An independent source audit of 880 requirement checks led to 59 corrections, keeping published rules matched to school sources.',
+  'Pre-nursing students had no easy way to check which programs their classes qualified them for, so I collected 3,000+ prerequisite rules from 650+ programs in 8 states and launched a free tool that checks a student\'s classes against them. It reached 300+ users in the first 2 weeks, and I logged 77 requests for 24 additional states to decide where to expand next. Rebuilding the intake over several releases raised class-check completion from 32% to 40%. An independent source audit of 880 requirement checks led to 59 corrections, keeping published rules matched to school sources.',
   metrics: [
   '300+ users in 2 weeks',
-  '34% activation (40% target)',
+  'Completion 32% → 40%',
   '77 state requests',
   '880-check source audit'],
 
@@ -62,7 +62,7 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Built Around Real Users',
-    caption: 'Defined the activation KPI up front and built a privacy-safe funnel dashboard to track it. Activation is 34% against a 40% target, so the dashboard breaks the intake down card by card to show where people drop off; that data led to cutting a sign-in step only 3% of users completed. Tester feedback drove distance search, NCLEX filters, retake limits, and a best-match list. Shown: the dashboard during launch week.',
+    caption: 'Defined class-check completion as the success metric up front, set a 40% target, and built a privacy-safe funnel dashboard that tracks it card by card. At first only 32% of visitors finished, and the dashboard showed people quitting at the setup questions in front of the class questions. Over several releases I tested where the location question goes, consolidated class questions into fewer cards, and cut a sign-in step only 4 of 136 people used. Completion rose to 40%, meeting the target, even as new program types and questions were added. Tester feedback drove distance search, NCLEX filters, retake limits, and a best-match list. Shown: the dashboard during launch week.',
     image: trackrxDashboard
   }],
 
@@ -75,7 +75,7 @@ const projects: ProjectData[] = [
   title: '19V Capital: Multi-Asset Strategy Research Platform',
   anchorMetric: '100+ strategies tested · nearly 90% rejected',
   description:
-  'Built a multi-asset research platform at 19V Capital spanning futures, commodities, crypto, and prediction markets. Tested 100+ trading strategies under pre-registered pass/fail rules, rejecting nearly 90% and advancing the rest to paper or live tracking. Caught 4 data-timing errors that had made failing strategies look profitable and turned each into an automated check, consolidated 170+ datasets onto a versioned data platform, and built Claude Code agents that automate parts of the research funnel.',
+  'Built a research process at 19V Capital that tests trading strategies across futures, crypto, and prediction markets. Evaluated 100+ strategies under pass/fail rules set before seeing results, rejecting nearly 90% and advancing the rest to paper or live tracking. Found 4 cases where a losing strategy looked profitable because the test used information not yet available at the time of the trade, and built automatic checks so the same mistake could not recur. Consolidated 170+ datasets spanning 15+ years of futures, interest rates, news events, and prediction-market odds into one shared source, and built Claude Code agents that automate repetitive screening steps, saving hours per strategy reviewed.',
   metrics: [
   '100+ strategies tested',
   'nearly 90% rejected',
@@ -106,7 +106,7 @@ const projects: ProjectData[] = [
   },
   {
     title: 'Data Platform & AI Agents',
-    caption: '170+ datasets spanning 15+ years of market history live on a governed data platform (Python, AWS S3, GitHub CI) with automated guards against lookahead bias and data leakage, so every result traces back to versioned inputs. AI research agents built with Claude Code automate portfolio-fit screening and post-trade attribution, alongside a meta-agent that researches a domain, distills a quality framework, and drafts new agents.',
+    caption: '170+ datasets spanning 15+ years of futures prices, interest rates, news events, and prediction-market odds live on one governed data platform (Python, AWS S3, GitHub CI) with automated guards against lookahead bias and data leakage, so every result traces back to versioned inputs. AI research agents built with Claude Code automate portfolio-fit screening and post-trade attribution, alongside a meta-agent that researches a domain, distills a quality framework, and drafts new agents.',
     image: quantPlatform
   }],
 
@@ -214,7 +214,7 @@ function TrackRxSVG() {
         </g>
       ))}
       <text x="160" y="190" fontSize="8" fill="#9CA3AF" fontFamily="Nunito" textAnchor="middle">
-        330+ programs · 1,600+ rules
+        650+ programs · 3,000+ rules
       </text>
     </svg>);
 
